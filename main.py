@@ -22,12 +22,13 @@ g = Github(auth=auth)
 #for path in repo.get_contents(path = ""):
 #    print(path.)
 repo = g.get_repo("kavi106/pipelines")
-contents = repo.get_contents("")
+#contents = repo.get_contents("")
+contents = repo.get_contents("test.json")
 print(contents)
-while contents:
-    file_content = contents.pop(0)
-    if file_content.type == "dir":
-      contents.extend(repo.get_contents(file_content.path))
+#while contents:
+#    file_content = contents.pop(0)
+#    if file_content.type == "dir":
+#      contents.extend(repo.get_contents(file_content.path))
       #print(file_content.path)
     #else:
     #  print(file_content)
