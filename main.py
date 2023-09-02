@@ -6,7 +6,7 @@ from github import Auth
 #repo = g.get_user().get_repo( "pipelines" )
 #print(repo.get_dir_contents(""))
 
-auth = Auth.Token("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")
+auth = Auth.Token("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")
 
 g = Github(auth=auth)
 
@@ -24,7 +24,7 @@ g = Github(auth=auth)
 repo = g.get_repo("kavi106/pipelines")
 #contents = repo.get_contents("")
 contents = repo.get_contents("test.json")
-print(contents)
+print(contents.decoded_content.decode())
 #while contents:
 #    file_content = contents.pop(0)
 #    if file_content.type == "dir":
