@@ -1,0 +1,70 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Label",
+        "text": "Flow Cytometry Data Quality Check Process"
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/myLabDataTaskId",
+            "label": "MyLabData TaskId"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/requesterMUDID",
+            "label": "Requester MUDID"
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/instrumentSapId",
+            "label": "Instrument SAP ID"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/dataCleanAlgorithm",
+            "label": "Data Clean Algorithm"
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/projectId",
+            "label": "Project ID"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/experimentNumber",
+            "label": "Experimant Number (ELN)"
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/studyNumber",
+            "label": "Study Number"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/departmentName",
+            "label": "Department Name"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+      "myLabDataTaskId":
+      {
+        "type": "string"
+      },
+      "requesterMUDID":
+      {
+        "type": "string"
+      },
+      "instrumentSapId":
+      {
+        "type": "string"
+      },
+      "dataCleanAlgorithm":
+      {
+        "type": "string",
+        "enum": ["FlowAI"]
+      },
+      "projectId":
+      {
+        "type": "string"
+      },
+      "experimentNumber":
+      {
+        "type": "string"
+      },
+      "studyNumber":
+      {
+        "type": "string"
+      },
+      "departmentName":
+      {
+        "type": "string"
+      }
+    },
+    "required": ["myLabDataTaskId", "requesterMUDID", "instrumentSapId", "dataCleanAlgorithm", "projectId", "experimentNumber", "studyNumber"]
+  }
+  
