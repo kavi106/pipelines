@@ -6,7 +6,7 @@ from github import Auth
 #repo = g.get_user().get_repo( "pipelines" )
 #print(repo.get_dir_contents(""))
 
-auth = Auth.Token("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")
+auth = Auth.Token("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")
 
 g = Github(auth=auth)
 

@@ -1,4 +1,9 @@
 {
-  "departmentName": "BE Immunology",
-  "dataCleanAlgorithm": "FlowAI"
+  "name": "John Doe",
+  "vegetarian": false,
+  "birthDate": "1985-06-02",
+  "personalData": {
+    "age": 34
+  },
+  "postalCode": "12345"
 }
