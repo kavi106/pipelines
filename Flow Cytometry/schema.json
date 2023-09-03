@@ -36,9 +36,9 @@
       },
       "uploadexcelfile":
       {
-        "type": "string"
+        "type": "file"
       }
     },
-    "required": ["myLabDataTaskId", "requesterMUDID", "instrumentSapId", "dataCleanAlgorithm", "projectId", "experimentNumber", "studyNumber", "uploadexcelfile"]
+    "required": ["myLabDataTaskId", "requesterMUDID", "instrumentSapId", "dataCleanAlgorithm", "projectId", "experimentNumber", "studyNumber"]
   }
   
