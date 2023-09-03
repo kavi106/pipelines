@@ -64,6 +64,16 @@
             "label": "Department Name"
           }
         ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/uploadexcelfile",
+            "label": "Upload metadata lab input excel file"
+          }
+        ]
       }
     ]
   }
