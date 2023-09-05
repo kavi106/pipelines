@@ -1,6 +1,6 @@
 exit:
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
-image: "pic.jpg"
+image: "picture.jpg"
 tags:
   - "tag-13"
