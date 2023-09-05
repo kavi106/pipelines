@@ -1,7 +1,7 @@
 exit:
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
-image: "BloodCells_Anaemia_Octane_RY_6K_still"
+image: "BloodCells_Anaemia_Octane_RY_6K_still.jpg"
 tags:
   - "tag-1"
   - "this is a long tag"
