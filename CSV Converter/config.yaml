@@ -3,5 +3,3 @@ exit:
   endpoint: "/mount/fs/pipeline1"
 image: "GSK_DNA_6K_still.jpg"
 tags:
-  - "tag-1"
-  - "this is a long tag"
