@@ -27,7 +27,7 @@
       "type": "string"
     },
     "uploadexcelfile": {
-      "type": "blob"
+      "type": "object"
     }
   },
   "required": [
