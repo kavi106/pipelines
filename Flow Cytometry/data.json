@@ -1,4 +1,10 @@
 {
-  "departmentName": "BE Immunology",
-  "dataCleanAlgorithm": "FlowAI"
+  "myLabDataTaskId": "myid52365",
+  "requesterMUDID": "ks6763425",
+  "instrumentSapId": "1236-586",
+  "dataCleanAlgorithm": "FlowAI",
+  "projectId": "1236",
+  "experimentNumber": "0123",
+  "studyNumber": "56236",
+  "departmentName": "BE Immunology"
 }
