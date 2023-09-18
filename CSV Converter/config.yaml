@@ -3,7 +3,7 @@ exit:
   active: True
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
-  order: 1
+  order: 9
 image: "FlowCytometryclipart3.png"
 tags:
 group:
