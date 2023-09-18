@@ -1,7 +1,10 @@
 exit:
+  name: "XXX"
+  active: False
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
 image: "pic.jpg"
 tags:
   - "tag-3"
   - "this is a long tag"
+group: "CSV Converter"

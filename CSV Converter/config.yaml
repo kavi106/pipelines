@@ -1,5 +1,8 @@
 exit:
+  name: "Data Clean"
+  active: True
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
-image: "GSK_DNA_6K_still.jpg"
+image: "FlowCytometryclipart3.png"
 tags:
+group:

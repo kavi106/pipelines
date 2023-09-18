@@ -1,6 +1,9 @@
 exit:
+  name: "YYY"
+  active: True
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
 image: "picture.jpg"
 tags:
   - "tag-13"
+group:
