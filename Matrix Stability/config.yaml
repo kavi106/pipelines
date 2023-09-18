@@ -1,5 +1,5 @@
 exit:
-  name: "XXX"
+  name: "Gated Cell Population Data Upload"
   active: False
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
