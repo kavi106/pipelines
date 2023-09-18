@@ -3,8 +3,10 @@ exit:
   active: False
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
+  order: 9
 image: "pic.jpg"
 tags:
   - "tag-3"
   - "this is a long tag"
 group: "CSV Converter"
+order: 5

@@ -3,8 +3,10 @@ exit:
   active: False
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
+  order: 2
 image: "pic.jpg"
 tags:
   - "tag-1"
   - "this is a long tag"
 group:
+order: 2
