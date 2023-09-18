@@ -3,7 +3,7 @@ exit:
   active: False
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
-  order: 1
+  order: 2
 image: "pic.jpg"
 tags:
   - "tag-3"
