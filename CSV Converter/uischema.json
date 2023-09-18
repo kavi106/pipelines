@@ -2,50 +2,103 @@
   "type": "VerticalLayout",
   "elements": [
     {
+      "type": "Label",
+      "text": "Flow Cytometry Data Clean Process"
+    },
+    {
       "type": "HorizontalLayout",
       "elements": [
         {
           "type": "Control",
-          "scope": "#/properties/name"
+          "scope": "#/properties/myLabDataTaskId",
+          "label": "MyLabData TaskId",
+          "options": {
+            "renderer": "custom-string"
+          }
         },
         {
           "type": "Control",
-          "scope": "#/properties/personalData/properties/age"
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/birthDate"
+          "scope": "#/properties/requesterMUDID",
+          "label": "Requester MUDID",
+          "options": {
+            "renderer": "custom-string"
+          }
         }
       ]
     },
     {
-      "type": "Label",
-      "text": "Additional Information"
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/instrumentSapId",
+          "label": "Instrument SAP ID",
+          "options": {
+            "renderer": "custom-string"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dataCleanAlgorithm",
+          "label": "Data Clean Algorithm",
+          "options": {
+            "renderer": "custom-select"
+          }
+        }
+      ]
     },
     {
       "type": "HorizontalLayout",
       "elements": [
         {
           "type": "Control",
-          "scope": "#/properties/personalData/properties/height"
+          "scope": "#/properties/projectId",
+          "label": "Project ID",
+          "options": {
+            "renderer": "custom-string"
+          }
         },
         {
           "type": "Control",
-          "scope": "#/properties/nationality"
+          "scope": "#/properties/experimentNumber",
+          "label": "Experimant Number (ELN)",
+          "options": {
+            "renderer": "custom-string"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/studyNumber",
+          "label": "Study Number",
+          "options": {
+            "renderer": "custom-string"
+          }
         },
         {
           "type": "Control",
-          "scope": "#/properties/occupation",
-          "suggestion": [
-            "Accountant",
-            "Engineer",
-            "Freelancer",
-            "Journalism",
-            "Physician",
-            "Student",
-            "Teacher",
-            "Other"
-          ]
+          "scope": "#/properties/resultRecipientEmails",
+          "label": "Result Recipient Emails",
+          "options": {
+            "renderer": "custom-email-list"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/uploadexcelfile",
+          "label": "Upload metadata lab input excel file",
+          "options": {
+            "renderer": "custom-upload-excel"
+          }
         }
       ]
     }

@@ -1,61 +1,48 @@
 {
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string",
-      "minLength": 3,
-      "description": "Please enter your name"
-    },
-    "vegetarian": {
-      "type": "boolean"
-    },
-    "birthDate": {
-      "type": "string",
-      "format": "date"
-    },
-    "nationality": {
-      "type": "string",
-      "enum": [
-        "DE",
-        "IT",
-        "JP",
-        "US",
-        "RU",
-        "Other"
-      ]
-    },
-    "personalData": {
-      "type": "object",
-      "properties": {
-        "age": {
-          "type": "integer",
-          "description": "Please enter your age."
-        },
-        "height": {
-          "type": "number"
-        },
-        "drivingSkill": {
-          "type": "number",
-          "maximum": 10,
-          "minimum": 1,
-          "default": 7
-        }
-      },
-      "required": [
-        "age",
-        "height"
-      ]
-    },
-    "occupation": {
+    "myLabDataTaskId": {
       "type": "string"
     },
-    "postalCode": {
+    "requesterMUDID": {
+      "type": "string"
+    },
+    "instrumentSapId": {
+      "type": "string"
+    },
+    "dataCleanAlgorithm": {
       "type": "string",
-      "maxLength": 5
+      "enum": ["FlowAI"]
+    },
+    "projectId": {
+      "type": "string"
+    },
+    "experimentNumber": {
+      "type": "string"
+    },
+    "studyNumber": {
+      "type": "string"
+    },
+    "resultRecipientEmails": {
+      "type": "array"
+    },
+    "uploadexcelfile": {
+      "type": "object"
     }
   },
   "required": [
-    "occupation",
-    "nationality"
-  ]
+    "myLabDataTaskId",
+    "requesterMUDID",
+    "instrumentSapId",
+    "dataCleanAlgorithm",
+    "projectId",
+    "experimentNumber",
+    "studyNumber",
+    "uploadexcelfile"
+  ],
+  "errorMessage": {
+    "properties": {
+      "myLabDataTaskId": "INVALID INPUT. This is a required field"
+    }
+  }
 }
