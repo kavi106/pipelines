@@ -5,6 +5,7 @@ exit:
   endpoint: "/mount/fs/pipeline1"
   order: 1
 image: "FlowCytometryclipart3.png"
+sub-title: "Vx-Belgium"
 tags:
 group:
 order: 10
