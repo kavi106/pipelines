@@ -1,11 +1,13 @@
 exit:
-  name: "Data Clean"
-  active: True
+  name: "Gated Cell Population Data Upload"
+  active: False
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
-  order: 1
-image: "FlowCytometryclipart3.png"
-subtitle: "Vx-Belgium"
+  order: 2
+image: "pic.jpg"
+subtitle: 
 tags:
+  - "tag-1"
+  - "this is a long tag"
 group:
-order: 10
+order: 2

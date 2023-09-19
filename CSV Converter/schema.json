@@ -23,8 +23,8 @@
     "studyNumber": {
       "type": "string"
     },
-    "resultRecipientEmails": {
-      "type": "array"
+    "departmentName": {
+      "type": "string"
     },
     "uploadexcelfile": {
       "type": "object"

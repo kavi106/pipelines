@@ -3,7 +3,7 @@
   "elements": [
     {
       "type": "Label",
-      "text": "Flow Cytometry Data Quality Check Process"
+      "text": "Flow Cytometry Data Clean Process"
     },
     {
       "type": "HorizontalLayout",
@@ -81,10 +81,10 @@
         },
         {
           "type": "Control",
-          "scope": "#/properties/departmentName",
-          "label": "Department Name",
+          "scope": "#/properties/resultRecipientEmails",
+          "label": "Result Recipient Emails",
           "options": {
-            "renderer": "custom-string"
+            "renderer": "custom-email-list"
           }
         }
       ]
