@@ -5,7 +5,7 @@ exit:
   endpoint: "/mount/fs/pipeline1"
   order: 1
 image: "pic.jpg"
-sub-title: "Vx-Belgium"
+subtitle: "Vx-Belgium"
 tags:
   - "another tag"
 group:

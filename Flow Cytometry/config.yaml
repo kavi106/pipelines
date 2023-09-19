@@ -5,7 +5,7 @@ exit:
   endpoint: "/mount/fs/pipeline1"
   order: 2
 image: "pic.jpg"
-sub-title: 
+subtitle: 
 tags:
   - "tag-1"
   - "this is a long tag"
