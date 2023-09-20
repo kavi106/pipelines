@@ -13,6 +13,8 @@
             "type": "aks_flink"
         }
     ],
+    "exit_button_title": "Data Clean",
+    "exit_order": 1,
     "image": "FlowCytometryclipart3.png",
     "title": "Flow Cytometry - Vx-Belgium",
     "group": "",
