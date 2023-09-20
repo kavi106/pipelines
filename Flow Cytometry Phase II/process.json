@@ -14,7 +14,7 @@
     ],
     "exit_button_title": "Gated Cell Population Data Upload",
     "exit_button_active": 0,
-    "exit_order": 2,
+    "exit_order": 1,
     "image": "",
     "title": "",
     "group": "Flow Cytometry Phase I",
