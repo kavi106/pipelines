@@ -1,4 +1,8 @@
 {
+  "myLabDataTaskId": "12-3432323-23",
+  "requesterMUDID": "ks234433",
+  "instrumentSapId": "123322",
   "dataCleanAlgorithm": "FlowAI",
+  "projectId": "pro23",
   "departmentName": "BE Immunology"
 }

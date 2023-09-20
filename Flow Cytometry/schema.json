@@ -39,10 +39,5 @@
     "experimentNumber",
     "studyNumber",
     "uploadexcelfile"
-  ],
-  "errorMessage": {
-    "properties": {
-      "myLabDataTaskId": "INVALID INPUT. This is a required field"
-    }
-  }
+  ]
 }

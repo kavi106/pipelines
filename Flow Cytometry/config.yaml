@@ -1,7 +1,7 @@
 exit:
   name: "Data Clean"
   active: True
-  type: "Local"
+  type: "local_json"
   endpoint: "/mount/fs/pipeline1"
   order: 1
 image: "FlowCytometryclipart3.png"
