@@ -14,7 +14,7 @@
     ],
     "exit_button_title": "CSV Converter",
     "exit_button_active": 1,
-    "exit_order": 1,
+    "exit_button_order": 1,
     "image": "pic.jpg",
     "title": "CSV Converter",
     "group": "",
