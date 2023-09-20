@@ -1,0 +1,20 @@
+{
+    "jsonforms": {
+        "schema": "schema.json",
+        "ui_schema": "uischema.json",
+        "data": "data.json"
+    },
+    "exits": [
+        {
+            "kwargs": {
+
+            },
+            "type": "aks_flink"
+        }
+    ],
+    "image": "",
+    "title": "",
+    "group": "Flow Cytometry Phase I",
+    "tags": "",
+    "Order": 1
+}

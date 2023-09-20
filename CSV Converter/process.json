@@ -1,0 +1,22 @@
+{
+    "jsonforms": {
+        "schema": "schema.json",
+        "ui_schema": "uischema.json",
+        "data": "data.json"
+    },
+    "exits": [
+        {
+            "kwargs": {
+
+            },
+            "type": "local_json"
+        }
+    ],
+    "exit_button_title": "CSV Converter",
+    "exit_order": 1,
+    "image": "pic.jpg",
+    "title": "CSV Converter",
+    "group": "",
+    "tags": "",
+    "Order": 1
+}

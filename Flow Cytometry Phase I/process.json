@@ -1,0 +1,21 @@
+{
+    "jsonforms": {
+        "schema": "schema.json",
+        "ui_schema": "uischema.json",
+        "data": "data.json"
+    },
+    "exits": [
+        {
+            "kwargs": {
+                "beam_pipeline": "tec_qc_pipeline.py",
+                "base_input_json": "tec_qc.json"
+            },
+            "type": "aks_flink"
+        }
+    ],
+    "image": "FlowCytometryclipart3.png",
+    "title": "Flow Cytometry - Vx-Belgium",
+    "group": "",
+    "tags": "tag 1,tag 2,long tag",
+    "Order": 1
+}
