@@ -11,18 +11,12 @@
         {
           "type": "Control",
           "scope": "#/properties/myLabDataTaskId",
-          "label": "MyLabData TaskId",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "MyLabData TaskId"
         },
         {
           "type": "Control",
           "scope": "#/properties/requesterMUDID",
-          "label": "Requester MUDID",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "Requester MUDID"
         }
       ]
     },
@@ -32,18 +26,12 @@
         {
           "type": "Control",
           "scope": "#/properties/instrumentSapId",
-          "label": "Instrument SAP ID",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "Instrument SAP ID"
         },
         {
           "type": "Control",
           "scope": "#/properties/dataCleanAlgorithm",
-          "label": "Data Clean Algorithm",
-          "options": {
-            "renderer": "custom-select"
-          }
+          "label": "Data Clean Algorithm"
         }
       ]
     },
@@ -53,18 +41,12 @@
         {
           "type": "Control",
           "scope": "#/properties/projectId",
-          "label": "Project ID",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "Project ID"
         },
         {
           "type": "Control",
           "scope": "#/properties/experimentNumber",
-          "label": "Experimant Number (ELN)",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "Experimant Number (ELN)"
         }
       ]
     },
@@ -74,18 +56,12 @@
         {
           "type": "Control",
           "scope": "#/properties/studyNumber",
-          "label": "Study Number",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "Study Number"
         },
         {
           "type": "Control",
           "scope": "#/properties/departmentName",
-          "label": "Department Name",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "Department Name"
         }
       ]
     },
