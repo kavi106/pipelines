@@ -4,5 +4,7 @@
   "instrumentSapId": "123322",
   "dataCleanAlgorithm": "FlowAI",
   "projectId": "pro23",
+  "experimentNumber": "EXP9900",
+  "studyNumber": "St5656",
   "departmentName": "BE Immunology"
 }
