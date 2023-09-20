@@ -14,6 +14,7 @@
         }
     ],
     "exit_button_title": "Data Clean",
+    "exit_button_active": 1,
     "exit_order": 1,
     "image": "FlowCytometryclipart3.png",
     "title": "Flow Cytometry - Vx-Belgium",
