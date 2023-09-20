@@ -1,6 +1,6 @@
 exit:
   name: "Gated Cell Population Data Upload"
-  active: False
+  active: True
   type: "Local"
   endpoint: "/mount/fs/pipeline1"
   order: 2
