@@ -7,7 +7,8 @@
     "exits": [
         {
             "kwargs": {
-
+                "path": "./",
+                "sort_keys": "False"
             },
             "type": "local_json"
         }
