@@ -82,9 +82,9 @@
         {
           "type": "Control",
           "scope": "#/properties/resultRecipientEmails",
-          "label": "Result Recipient Emails",
+          "label": "Result Recipient MUDID (separated by comma)",
           "options": {
-            "renderer": "custom-email-list"
+            "renderer": "custom-string"
           }
         }
       ]
