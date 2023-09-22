@@ -24,8 +24,8 @@
     "studyNumber": {
       "type": "string"
     },
-    "resultRecipientEmails": {
-      "type": "array"
+    "resultRecipientMudid": {
+      "type": "string"
     },
     "uploadexcelfile": {
       "type": "object"
