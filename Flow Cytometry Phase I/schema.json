@@ -5,8 +5,7 @@
       "type": "string"
     },
     "requesterMUDID": {
-      "type": "string",
-      "readonly": true
+      "type": "string"
     },
     "instrumentSapId": {
       "type": "string"
