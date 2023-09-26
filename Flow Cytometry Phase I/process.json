@@ -16,6 +16,19 @@
                 "mylabdata_api_backend_url": "mylabdata-files.uat.corpnet2.com"
             },
             "type": "flink"
+        },
+        {
+            "kwargs": {
+
+            },
+            "type": "flinkx"
+        },
+        {
+            "kwargs": {
+                "input": "xxx",
+                "output": "yyy"
+            },
+            "type": "zzz"
         }
     ],
     "exit_button_title": "Data Clean",
