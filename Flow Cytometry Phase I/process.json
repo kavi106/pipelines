@@ -2,15 +2,20 @@
     "jsonforms": {
         "schema": "schema.json",
         "ui_schema": "uischema.json",
-        "data": "data.json"
+        "data": "data.json",
+        "base_input_json": "tec_qc_config.json",
+        "ursgal_credentials": "credentials_lookup.json"
+    },
+    "additional_files": {
+        "beam_pipeline": "tec_qc_pipeline.py"
     },
     "exits": [
         {
             "kwargs": {
-                "beam_pipeline": "tec_qc_pipeline.py",
-                "base_input_json": "tec_qc.json"
+                "input_file_pattern": "^[^/\\\\]*\\.fcs$",
+                "mylabdata_api_backend_url": "mylabdata-files.uat.corpnet2.com"
             },
-            "type": "aks_flink"
+            "type": "flink"
         }
     ],
     "exit_button_title": "Data Clean",
@@ -19,6 +24,6 @@
     "image": "FlowCytometryclipart3.png",
     "title": "Flow Cytometry - Vx-Belgium",
     "group": "",
-    "tags": "tag 1,tag 2,long tag",
+    "tags": "",
     "order": 1
 }

@@ -1,0 +1,19 @@
+{
+    "files": {
+        "fcs": []
+    },
+    "config": {
+        "hash_algorithm": "md5",
+        "logging_level": "INFO",
+        "umeta": "sqlite3"
+    },
+    "urun_dict": {
+        "parameters": {},
+        "unode_parameters": {}
+    },
+    "default_pipeline_config_json": "default_pipeline_config_flink.json",
+    "pipeline_configuration": {
+        "--parallelism": "20",
+        "--max_bundle_size": "1"
+    }
+}

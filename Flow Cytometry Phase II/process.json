@@ -4,6 +4,8 @@
         "ui_schema": "uischema.json",
         "data": "data.json"
     },
+    "additional_files": {
+    },
     "exits": [
         {
             "kwargs": {
