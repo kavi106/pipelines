@@ -2,7 +2,8 @@
   "type": "object",
   "properties": {
     "myLabDataTaskId": {
-      "type": "string"
+      "type": "string",
+      "title": "MyLabData TaskId"
     },
     "requesterMUDID": {
       "type": "string"
