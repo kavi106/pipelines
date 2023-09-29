@@ -2,6 +2,10 @@
   "type": "VerticalLayout",
   "elements": [
     {
+      "type": "Label",
+      "text": "Flow Cytometry Data Clean Process"
+    },
+    {
       "type": "HorizontalLayout",
       "elements": [
         {
@@ -10,6 +14,90 @@
           "label": "MyLabData TaskId",
           "options": {
             "renderer": "custom-string"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/requesterMUDID",
+          "label": "Requester MUDID",
+          "options": {
+            "renderer": "custom-string"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/instrumentSapId",
+          "label": "Instrument SAP ID",
+          "options": {
+            "renderer": "custom-string"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dataCleanAlgorithm",
+          "label": "Data Clean Algorithm",
+          "options": {
+            "renderer": "custom-select"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/projectId",
+          "label": "Project Name",
+          "options": {
+            "renderer": "custom-string"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/experimentNumber",
+          "label": "Experimant Number (ELN)",
+          "options": {
+            "renderer": "custom-string"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/studyNumber",
+          "label": "Study Number",
+          "options": {
+            "renderer": "custom-string"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/resultRecipientMudid",
+          "label": "Result Recipient MUDID (separated by comma)",
+          "options": {
+            "renderer": "custom-string"
+          }
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/uploadexcelfile",
+          "label": "Upload metadata lab input excel file",
+          "options": {
+            "renderer": "custom-upload-excel"
           }
         }
       ]
