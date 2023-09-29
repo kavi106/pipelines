@@ -25,69 +25,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "HorizontalLayout",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/instrumentSapId",
-          "label": "Instrument SAP ID",
-          "options": {
-            "renderer": "custom-string"
-          }
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/dataCleanAlgorithm",
-          "label": "Data Clean Algorithm",
-          "options": {
-            "renderer": "custom-select"
-          }
-        }
-      ]
-    },
-    {
-      "type": "HorizontalLayout",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/projectId",
-          "label": "Project Name",
-          "options": {
-            "renderer": "custom-string"
-          }
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/experimentNumber",
-          "label": "Experimant Number (ELN)",
-          "options": {
-            "renderer": "custom-string"
-          }
-        }
-      ]
-    },
-    {
-      "type": "HorizontalLayout",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/studyNumber",
-          "label": "Study Number",
-          "options": {
-            "renderer": "custom-string"
-          }
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/resultRecipientMudid",
-          "label": "Result Recipient MUDID (separated by comma)",
-          "options": {
-            "renderer": "custom-string"
-          }
-        }
-      ]
     }
   ]
 }
