@@ -2,24 +2,12 @@
   "type": "VerticalLayout",
   "elements": [
     {
-      "type": "Label",
-      "text": "Flow Cytometry Data Clean Process"
-    },
-    {
       "type": "HorizontalLayout",
       "elements": [
         {
           "type": "Control",
           "scope": "#/properties/myLabDataTaskId",
           "label": "MyLabData TaskId",
-          "options": {
-            "renderer": "custom-string"
-          }
-        },
-        {
-          "type": "Control",
-          "scope": "#/properties/requesterMUDID",
-          "label": "Requester MUDID",
           "options": {
             "renderer": "custom-string"
           }
