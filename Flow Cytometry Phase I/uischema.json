@@ -2,16 +2,12 @@
   "type": "VerticalLayout",
   "elements": [
     {
-      "type": "HorizontalLayout",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/uploadexcelfile",
-          "options": {
-            "renderer": "custom-upload-excel"
-          }
-        }
-      ]
+      "type": "Control",
+      "scope": "#/properties/myLabDataTaskId",
+      "label": "MyLabData TaskId",
+      "options": {
+        "renderer": "custom-string"
+      }
     }
   ]
 }
