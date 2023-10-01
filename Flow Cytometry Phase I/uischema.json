@@ -84,7 +84,7 @@
           "scope": "#/properties/resultRecipientMudid",
           "label": "Result Recipient MUDID (separated by comma)",
           "options": {
-            "renderer": "custom-string"
+            "renderer": "custom-email-list"
           }
         }
       ]
