@@ -25,7 +25,7 @@ def main(argv=None, save_main_session=True):
 
     input_json = {}
     input_json["requesterName"] = "Kavi"
-    input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
+    input_json["resultRecipient"] = [{"email":"kavi.seewoogoolam@gmail.com"}, {"email":"kavi@seewoogoolam.com"}]
     input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
     input_json["wid"] = "u_noisy_trade_conceives_majestic_eyes"
     input_json["fcs_files"] = ["file1","file2","file3","file4"]
