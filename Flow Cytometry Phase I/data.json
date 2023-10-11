@@ -1,10 +1,9 @@
 {
-  "myLabDataTaskId": "23-56985-23",
-  "requesterMUDID": "ks256632",
-  "instrumentSapId": "2345433",
-  "projectId": "p0987",
-  "experimentNumber": "eln87656",
-  "studyNumber": "s67",
+  "myLabDataTaskId": "23-10001016-H6",
+  "instrumentSapId": "354557",
+  "projectId": "111",
+  "experimentNumber": "222",
+  "studyNumber": "333",
   "departmentName": "BE Immunology",
-  "dataCleanAlgorithm": "FlowAI"
+  "dataCleanAlgorithm": "FlowAI (1.30.0)"
 }

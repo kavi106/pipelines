@@ -2,8 +2,7 @@
   "type": "object",
   "properties": {
     "myLabDataTaskId": {
-      "type": "string",
-      "title": "MyLabData TaskId"
+      "type": "string"
     },
     "requesterMUDID": {
       "type": "string"
@@ -13,7 +12,7 @@
     },
     "dataCleanAlgorithm": {
       "type": "string",
-      "enum": ["FlowAI"]
+      "enum": ["FlowAI (1.30.0)","FlowCut (1.10.0)","PeacoQC (1.10.0)"]
     },
     "projectId": {
       "type": "string"
@@ -24,11 +23,8 @@
     "studyNumber": {
       "type": "string"
     },
-    "resultRecipientMudid": {
+    "resultRecipient": {
       "type": "array"
-    },
-    "uploadexcelfile": {
-      "type": "object"
     }
   },
   "required": [
@@ -38,7 +34,6 @@
     "dataCleanAlgorithm",
     "projectId",
     "experimentNumber",
-    "studyNumber",
-    "uploadexcelfile"
+    "studyNumber"
   ]
 }

@@ -81,23 +81,10 @@
         },
         {
           "type": "Control",
-          "scope": "#/properties/resultRecipientMudid",
-          "label": "Result Recipient MUDID (separated by comma)",
+          "scope": "#/properties/resultRecipient",
+          "label": "Result Recipient",
           "options": {
             "renderer": "custom-email-list"
-          }
-        }
-      ]
-    },
-    {
-      "type": "HorizontalLayout",
-      "elements": [
-        {
-          "type": "Control",
-          "scope": "#/properties/uploadexcelfile",
-          "label": "Upload metadata lab input excel file",
-          "options": {
-            "renderer": "custom-upload-excel"
           }
         }
       ]

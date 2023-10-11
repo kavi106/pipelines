@@ -12,23 +12,10 @@
     "exits": [
         {
             "kwargs": {
-                "input_file_pattern": "^[^/\\\\]*\\.fcs$",
+                "input_file_pattern": "^((?!ursgal|[Cc]ompensat).)*\\.fcs$",
                 "mylabdata_api_backend_url": "mylabdata-files.uat.corpnet2.com"
             },
             "type": "flink"
-        },
-        {
-            "kwargs": {
-
-            },
-            "type": "flinkx"
-        },
-        {
-            "kwargs": {
-                "input": "xxx",
-                "output": "yyy"
-            },
-            "type": "zzz"
         }
     ],
     "exit_button_title": "Data Clean",
@@ -37,6 +24,6 @@
     "image": "FlowCytometryclipart3.png",
     "title": "Flow Cytometry - Vx-Belgium",
     "group": "",
-    "tags": "",
+    "tags": "Cytocluster 1.2.0",
     "order": 1
 }

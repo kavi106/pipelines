@@ -1,0 +1,12 @@
+{
+    "pipeline_configuration": {
+        "--job_name": "ursgal",
+        "--runner": "FlinkRunner",
+        "--flink_version": "1.16",
+        "--flink_master": "http://localhost:8081",
+        "--environment_type": "EXTERNAL",
+        "--environment_config": "localhost:8081",
+        "--save_main_session": null,
+        "--flink_submit_uber_jar": null
+    }
+}
