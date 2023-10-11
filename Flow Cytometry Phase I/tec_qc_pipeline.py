@@ -23,14 +23,14 @@ def main(argv=None, save_main_session=True):
     #     argv=argv, save_main_session=save_main_session
     # )
 
-    # input_json = {}
-    # input_json["requesterName"] = "Kavi"
+    input_json = {}
+    input_json["requesterName"] = "Kavi"
     # input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
     # input_json["resultRecipient"].append(input_json["requesterEmail"])
     #input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
 
-    # name = input_json["requesterName"]
-    name = "Kavi"
+    name = input_json["requesterName"]
+    #name = "Kavi"
     html = render_template('start.html', **locals())
 
     # recipients = (
