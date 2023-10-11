@@ -25,9 +25,9 @@ def main(argv=None, save_main_session=True):
 
     input_json = {}
     input_json["requesterName"] = "Kavi"
-    # input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
-    # input_json["resultRecipient"].append(input_json["requesterEmail"])
-    #input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
+    input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
+    input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
+    input_json["resultRecipient"].append(input_json["requesterEmail"])
 
     name = input_json["requesterName"]
     #name = "Kavi"
@@ -39,7 +39,7 @@ def main(argv=None, save_main_session=True):
     #     else []
     # )
     send_email(
-        ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"], 
+        input_json["resultRecipient"], 
         cc="", 
         bcc="", 
         subject="Pipeline Started", 
