@@ -19,34 +19,25 @@ def main(argv=None, save_main_session=True):
     Returns:
         None
     """
-    #logger.debug("%s", "Started".rstrip())
-
-    # with tempfile.NamedTemporaryFile(
-    #     dir=os.getcwd(), mode="wb+", delete=False, suffix=".kavi"
-    # ) as tmp_pipeline_file:
-    #     None
-    # Send email
-    name = 'kryptonite'
-    html = render_template('start.html', **locals())
-    
-    # to_list = 'kavi.seewoogoolam@gmail.com'
-    #sender = conf.MAIL_FROM
-    # cc = ''
-    # bcc = ''
-    # subject = 'Meet me for a beatdown'
-    
-    # send email to a list of email addresses
-    send_email('kavi.seewoogoolam@gmail.com', cc="", bcc="", subject="Pipeline Started", body=html) 
-
-
-    # logger.debug("%s", "Sent".rstrip())
-
-
-
-
     # pipeline_options, urd, input_json = ubeam.parse_inputs(
     #     argv=argv, save_main_session=save_main_session
     # )
+
+    input_json = {}
+    input_json["requesterName"] = "Kavi"
+    input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
+    input_json["requesterName"] = "Kavi"
+
+    name = input_json["requesterName"]
+    html = render_template('start.html', **locals())
+
+    recipients = (
+        [i["email"] for i in input_json["resultRecipient"]]
+        if hasattr(input_json, "resultRecipient")
+        else []
+    )
+    send_email(input_json["requesterEmail"], cc=recipients, bcc="", subject="Pipeline Started", body=html) 
+
     # with beam.Pipeline(options=pipeline_options) as search_pipeline:
     #     fcs_pcol = search_pipeline | "Create FCS input" >> beam.Create(
     #         [
