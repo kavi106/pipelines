@@ -26,24 +26,24 @@ def main(argv=None, save_main_session=True):
     logger.debug("%s", "Started".rstrip())
 
 
-    # Send email
-    name = 'kryptonite'
+    # # Send email
+    # name = 'kryptonite'
 
-    # generate HTML from template
-    #html = render_template('start.html', **locals())
-    html = "Hello"
+    # # generate HTML from template
+    # #html = render_template('start.html', **locals())
+    # html = "Hello"
     
-    to_list = ["kavi.seewoogoolam@gmail.com"]
-    #sender = conf.MAIL_FROM
-    cc = ''
-    bcc = ''
-    subject = 'Meet me for a beatdown'
+    # to_list = ["kavi.seewoogoolam@gmail.com"]
+    # #sender = conf.MAIL_FROM
+    # cc = ''
+    # bcc = ''
+    # subject = 'Meet me for a beatdown'
     
-    # send email to a list of email addresses
-    send_email(to_list, cc=cc, bcc=bcc, subject=subject, html=html)
+    # # send email to a list of email addresses
+    # send_email(to_list, cc=cc, bcc=bcc, subject=subject, html=html)
 
 
-    logger.debug("%s", "Sent".rstrip())
+    # logger.debug("%s", "Sent".rstrip())
 
 
 
