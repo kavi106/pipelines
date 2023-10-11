@@ -30,7 +30,8 @@ def main(argv=None, save_main_session=True):
     name = 'kryptonite'
 
     # generate HTML from template
-    html = render_template('start.html', **locals())
+    #html = render_template('start.html', **locals())
+    html = "Hello"
     
     to_list = ["kavi.seewoogoolam@gmail.com"]
     #sender = conf.MAIL_FROM
