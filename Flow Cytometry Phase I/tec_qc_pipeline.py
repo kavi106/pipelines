@@ -29,6 +29,7 @@ def main(argv=None, save_main_session=True):
     input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
     input_json["wid"] = "u_noisy_trade_conceives_majestic_eyes"
     input_json["fcs_files"] = ["file1","file2","file3","file4"]
+    input_json["myLabDataTaskId"] = '23-10001016-H6'
 
 
 
@@ -42,16 +43,17 @@ def main(argv=None, save_main_session=True):
     #name = "Kavi"
     html = render_template('start.html', **locals())
 
-    # recipients = (
-    #     [i["email"] for i in input_json["resultRecipient"]]
-    #     if hasattr(input_json, "resultRecipient")
-    #     else []
-    # )
+    recipients = (
+        [i["email"] for i in input_json["resultRecipient"]]
+        if hasattr(input_json, "resultRecipient")
+        else []
+    )
+    recipients.append(input_json["requesterEmail"])
     send_email(
-        input_json["resultRecipient"], 
+        recipients, 
         cc="", 
         bcc="", 
-        subject="Pipeline Started", 
+        subject=input_json["myLabDataTaskId"] + " - Pipeline Started", 
         body=html
     ) 
 
