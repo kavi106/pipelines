@@ -27,9 +27,18 @@ def main(argv=None, save_main_session=True):
     input_json["requesterName"] = "Kavi"
     input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
     input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
+    input_json["wid"] = "u_noisy_trade_conceives_majestic_eyes"
+    input_json["fcs_files"] = ["file1","file2","file3","file4"]
+
+
+
+
     input_json["resultRecipient"].append(input_json["requesterEmail"])
 
     name = input_json["requesterName"]
+    # wid, fcs_files
+    fcs_files = ', '.join(input_json["fcs_files"])
+    wid = input_json["wid"]
     #name = "Kavi"
     html = render_template('start.html', **locals())
 
