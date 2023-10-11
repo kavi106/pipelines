@@ -33,6 +33,9 @@
       "departmentName":
       {
         "type": "string"
+      },
+      "uploadexcelfile": {
+        "type": "object"
       }
     },
     "required": ["myLabDataTaskId", "requesterMUDID", "instrumentSapId", "dataCleanAlgorithm", "projectId", "experimentNumber", "studyNumber"]

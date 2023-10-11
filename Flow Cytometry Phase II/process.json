@@ -4,22 +4,20 @@
         "ui_schema": "uischema.json",
         "data": "data.json"
     },
-    "additional_files": {
-    },
     "exits": [
         {
             "kwargs": {
-
+                "path": "./",
+                "sort_keys": "False"
             },
-            "type": "aks_flink"
+            "type": "local_json"
         }
     ],
     "exit_button_title": "Gated Cell Population Data Upload",
     "exit_button_active": 0,
     "exit_button_order": 2,
-    "image": "",
-    "title": "",
-    "group": "Flow Cytometry Phase I",
+    "image": "FlowCytometryclipart3.png",
+    "title": "Flow Cytometry - Vx-Belgium",
     "tags": "",
     "order": 1
 }
