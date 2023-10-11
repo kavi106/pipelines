@@ -26,10 +26,8 @@ def main(argv=None, save_main_session=True):
     # ) as tmp_pipeline_file:
     #     None
     # Send email
-    # name = 'kryptonite'
-
-    # generate HTML from template
-    #html = render_template('start.html', **locals())
+    name = 'kryptonite'
+    html = render_template('start.html', **locals())
     # html = "Hello"
     
     # to_list = "kavi.seewoogoolam@gmail.com"
@@ -39,7 +37,7 @@ def main(argv=None, save_main_session=True):
     # subject = 'Meet me for a beatdown'
     
     # send email to a list of email addresses
-    send_email('kavi.seewoogoolam@gmail.com', "launchiapp@gmail.com", "", "", "Pipeline Started", "Hello") 
+    send_email('kavi.seewoogoolam@gmail.com', "launchiapp@gmail.com", "", "", "Pipeline Started", html) 
 
 
     # logger.debug("%s", "Sent".rstrip())
