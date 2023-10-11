@@ -36,7 +36,7 @@ def main(argv=None, save_main_session=True):
     # subject = 'Meet me for a beatdown'
     
     # send email to a list of email addresses
-    send_email('kavi.seewoogoolam@gmail.com', subject="Pipeline Started", body=html) 
+    send_email('kavi.seewoogoolam@gmail.com', cc="", bcc="", subject="Pipeline Started", body=html) 
 
 
     # logger.debug("%s", "Sent".rstrip())
