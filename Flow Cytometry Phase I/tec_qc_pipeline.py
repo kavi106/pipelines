@@ -48,10 +48,10 @@ def main(argv=None, save_main_session=True):
         if hasattr(input_json, "resultRecipient")
         else []
     )
-    #recipients.append(input_json["requesterEmail"])
+    recipients.append(input_json["requesterEmail"])
     send_email(
-        input_json["requesterEmail"], 
-        cc=recipients, 
+        recipients, 
+        cc="", 
         bcc="", 
         subject=input_json["myLabDataTaskId"] + " - Pipeline Started", 
         body=html
