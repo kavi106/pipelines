@@ -23,7 +23,6 @@
     "exit_button_order": 1,
     "image": "FlowCytometryclipart3.png",
     "title": "Flow Cytometry - Vx-Belgium",
-    "group": "",
-    "tags": "Cytocluster 1.2.0",
+    "tags": [{"text":"Cytocluster 1.2.0","link":"https://github.com/gsk-tech/CytoCluster"}],
     "order": 1
 }
