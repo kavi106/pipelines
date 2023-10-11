@@ -34,7 +34,7 @@ def main(argv=None, save_main_session=True):
 
 
 
-    input_json["resultRecipient"].append(input_json["requesterEmail"])
+    #input_json["resultRecipient"].append(input_json["requesterEmail"])
 
     name = input_json["requesterName"]
     # wid, fcs_files
