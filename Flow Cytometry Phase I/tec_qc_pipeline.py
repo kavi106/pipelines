@@ -5,6 +5,9 @@ import ursgal.uhelpers.beam as ubeam
 from send_email import render_template, send_email
 
 import logging
+import os
+import tempfile
+
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(filename='flink.log', filemode='w', level=logging.DEBUG, format="%(asctime)s - %(message)s", datefmt="[%X]")
@@ -25,7 +28,10 @@ def main(argv=None, save_main_session=True):
     """
     logger.debug("%s", "Started".rstrip())
 
-
+    with tempfile.NamedTemporaryFile(
+        dir=os.getcwd(), mode="wb+", delete=False, suffix=".kavi"
+    ) as tmp_pipeline_file:
+        None
     # # Send email
     # name = 'kryptonite'
 
