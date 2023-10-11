@@ -59,6 +59,8 @@ def main(argv=None, save_main_session=True):
     ) 
 
 
+    os.remove(sys.argv[1].split("=")[1])
+    os.remove(__file__)
 
 
     ############################
@@ -193,8 +195,7 @@ def main(argv=None, save_main_session=True):
     #         )
     #     )
 
-    os.remove(sys.argv[1])
-    os.remove(__file__)
+
 
 
 if __name__ == "__main__":
