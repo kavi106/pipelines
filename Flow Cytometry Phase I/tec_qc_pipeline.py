@@ -26,6 +26,7 @@ def main(argv=None, save_main_session=True):
     input_json = {}
     input_json["requesterName"] = "Kavi"
     input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
+    #input_json["resultRecipient"].append(input_json["requesterEmail"])
     input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
 
     name = input_json["requesterName"]
@@ -36,7 +37,13 @@ def main(argv=None, save_main_session=True):
         if hasattr(input_json, "resultRecipient")
         else []
     )
-    send_email(input_json["requesterEmail"], cc=recipients, bcc="", subject="Pipeline Started", body=html) 
+    send_email(
+        input_json["requesterEmail"], 
+        cc=','.join(input_json["resultRecipient"]), 
+        bcc="", 
+        subject="Pipeline Started", 
+        body=html
+    ) 
 
     # with beam.Pipeline(options=pipeline_options) as search_pipeline:
     #     fcs_pcol = search_pipeline | "Create FCS input" >> beam.Create(
