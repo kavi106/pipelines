@@ -45,7 +45,7 @@ def main(argv=None, save_main_session=True):
 
     recipients = (
         [i["email"] for i in input_json["resultRecipient"]]
-        if hasattr(input_json, "resultRecipient")
+        if 'requesterEmail' in input_json
         else []
     )
     recipients.append(input_json["requesterEmail"])
