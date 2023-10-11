@@ -1,5 +1,7 @@
 import apache_beam as beam
 
+import os
+import sys
 import ursgal
 import ursgal.uhelpers.beam as ubeam
 from send_email import render_template, send_email
@@ -23,6 +25,7 @@ def main(argv=None, save_main_session=True):
     #     argv=argv, save_main_session=save_main_session
     # )
 
+
     input_json = {}
     input_json["requesterName"] = "Kavi"
     input_json["resultRecipient"] = [{"email":"kavi.seewoogoolam@gmail.com"}, {"email":"kavi@seewoogoolam.com"}]
@@ -34,13 +37,11 @@ def main(argv=None, save_main_session=True):
 
 
 
-    #input_json["resultRecipient"].append(input_json["requesterEmail"])
+
 
     name = input_json["requesterName"]
-    # wid, fcs_files
     fcs_files = ', '.join(input_json["fcs_files"])
     wid = input_json["wid"]
-    #name = "Kavi"
     html = render_template('start.html', **locals())
 
     recipients = (
@@ -56,6 +57,31 @@ def main(argv=None, save_main_session=True):
         subject=input_json["myLabDataTaskId"] + " - Pipeline Started", 
         body=html
     ) 
+
+
+
+
+    ############################
+
+
+    # name = input_json["requesterName"]
+    # fcs_files = ', '.join(input_json["fcs_files"])
+    # wid = input_json["wid"]
+    # html = render_template('start.html', **locals())
+
+    # recipients = (
+    #     [i["email"] for i in input_json["resultRecipient"]]
+    #     if 'requesterEmail' in input_json
+    #     else []
+    # )
+    # recipients.append(input_json["requesterEmail"])
+    # send_email(
+    #     recipients, 
+    #     cc="", 
+    #     bcc="", 
+    #     subject=input_json["myLabDataTaskId"] + " - Pipeline Started", 
+    #     body=html
+    # ) 
 
     # with beam.Pipeline(options=pipeline_options) as search_pipeline:
     #     fcs_pcol = search_pipeline | "Create FCS input" >> beam.Create(
@@ -166,6 +192,9 @@ def main(argv=None, save_main_session=True):
     #             config=input_json["config"],
     #         )
     #     )
+
+    os.remove(sys.argv[1])
+    os.remove(__file__)
 
 
 if __name__ == "__main__":
