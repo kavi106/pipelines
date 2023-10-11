@@ -26,7 +26,7 @@ def main(argv=None, save_main_session=True):
     input_json = {}
     input_json["requesterName"] = "Kavi"
     input_json["resultRecipient"] = ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"]
-    input_json["requesterName"] = "Kavi"
+    input_json["requesterEmail"] = "kavi.x.seewoogoolam@gsk.com"
 
     name = input_json["requesterName"]
     html = render_template('start.html', **locals())
