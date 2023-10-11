@@ -4,16 +4,9 @@ import ursgal
 import ursgal.uhelpers.beam as ubeam
 from send_email import render_template, send_email
 
-import logging
-import os
-import tempfile
-
-
-logger = logging.getLogger(__name__)
-logging.basicConfig(filename='flink.log', filemode='w', level=logging.DEBUG, format="%(asctime)s - %(message)s", datefmt="[%X]")
-
-# def log_stderr(program: str, line: str) -> None:
-#     logger.debug("%s: %s", program, line.rstrip())
+# import logging
+# import os
+# import tempfile
 
 
 def main(argv=None, save_main_session=True):
@@ -28,25 +21,25 @@ def main(argv=None, save_main_session=True):
     """
     #logger.debug("%s", "Started".rstrip())
 
-    with tempfile.NamedTemporaryFile(
-        dir=os.getcwd(), mode="wb+", delete=False, suffix=".kavi"
-    ) as tmp_pipeline_file:
-        None
+    # with tempfile.NamedTemporaryFile(
+    #     dir=os.getcwd(), mode="wb+", delete=False, suffix=".kavi"
+    # ) as tmp_pipeline_file:
+    #     None
     # Send email
-    name = 'kryptonite'
+    # name = 'kryptonite'
 
     # generate HTML from template
     #html = render_template('start.html', **locals())
-    html = "Hello"
+    # html = "Hello"
     
-    to_list = "kavi.seewoogoolam@gmail.com"
+    # to_list = "kavi.seewoogoolam@gmail.com"
     #sender = conf.MAIL_FROM
-    cc = ''
-    bcc = ''
-    subject = 'Meet me for a beatdown'
+    # cc = ''
+    # bcc = ''
+    # subject = 'Meet me for a beatdown'
     
     # send email to a list of email addresses
-    send_email(to_list, cc=cc, bcc=bcc, subject=subject, html=html)
+    send_email('kavi.seewoogoolam@gmail.com', "launchiapp@gmail.com", "", "", "Pipeline Started", "Hello") 
 
 
     # logger.debug("%s", "Sent".rstrip())
