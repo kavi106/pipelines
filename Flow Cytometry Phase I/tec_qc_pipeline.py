@@ -66,24 +66,21 @@ def main(argv=None, save_main_session=True):
     ############################
 
 
-    # name = input_json["requesterName"]
-    # fcs_files = ', '.join(input_json["fcs_files"])
-    # wid = input_json["wid"]
-    # html = render_template('start.html', **locals())
+    html = render_template('end.html', **locals())
 
-    # recipients = (
-    #     [i["email"] for i in input_json["resultRecipient"]]
-    #     if 'requesterEmail' in input_json
-    #     else []
-    # )
-    # recipients.append(input_json["requesterEmail"])
-    # send_email(
-    #     recipients, 
-    #     cc="", 
-    #     bcc="", 
-    #     subject=input_json["myLabDataTaskId"] + " - Pipeline Started", 
-    #     body=html
-    # ) 
+    recipients = (
+        [i["email"] for i in input_json["resultRecipient"]]
+        if 'requesterEmail' in input_json
+        else []
+    )
+    recipients.append(input_json["requesterEmail"])
+    send_email(
+        recipients, 
+        cc="", 
+        bcc="", 
+        subject=input_json["myLabDataTaskId"] + " - Pipeline Started", 
+        body=html
+    ) 
 
     # with beam.Pipeline(options=pipeline_options) as search_pipeline:
     #     fcs_pcol = search_pipeline | "Create FCS input" >> beam.Create(
