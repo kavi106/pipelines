@@ -78,7 +78,7 @@ def main(argv=None, save_main_session=True):
         recipients, 
         cc="", 
         bcc="", 
-        subject=input_json["myLabDataTaskId"] + " - Pipeline Started", 
+        subject=input_json["myLabDataTaskId"] + " - Pipeline Completed", 
         body=html
     ) 
 
