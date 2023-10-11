@@ -39,7 +39,7 @@ def main(argv=None, save_main_session=True):
     #     else []
     # )
     send_email(
-        "kavi.seewoogoolam@gmail.com", 
+        ["kavi.seewoogoolam@gmail.com", "kavi@seewoogoolam.com"], 
         cc="", 
         bcc="", 
         subject="Pipeline Started", 
