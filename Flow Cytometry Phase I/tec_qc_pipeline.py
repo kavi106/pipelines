@@ -26,27 +26,27 @@ def main(argv=None, save_main_session=True):
     Returns:
         None
     """
-    logger.debug("%s", "Started".rstrip())
+    #logger.debug("%s", "Started".rstrip())
 
     with tempfile.NamedTemporaryFile(
         dir=os.getcwd(), mode="wb+", delete=False, suffix=".kavi"
     ) as tmp_pipeline_file:
         None
-    # # Send email
-    # name = 'kryptonite'
+    # Send email
+    name = 'kryptonite'
 
-    # # generate HTML from template
-    # #html = render_template('start.html', **locals())
-    # html = "Hello"
+    # generate HTML from template
+    #html = render_template('start.html', **locals())
+    html = "Hello"
     
-    # to_list = ["kavi.seewoogoolam@gmail.com"]
-    # #sender = conf.MAIL_FROM
-    # cc = ''
-    # bcc = ''
-    # subject = 'Meet me for a beatdown'
+    to_list = "kavi.seewoogoolam@gmail.com"
+    #sender = conf.MAIL_FROM
+    cc = ''
+    bcc = ''
+    subject = 'Meet me for a beatdown'
     
-    # # send email to a list of email addresses
-    # send_email(to_list, cc=cc, bcc=bcc, subject=subject, html=html)
+    # send email to a list of email addresses
+    send_email(to_list, cc=cc, bcc=bcc, subject=subject, html=html)
 
 
     # logger.debug("%s", "Sent".rstrip())
