@@ -3,7 +3,7 @@
     "elements": [
       {
         "type": "Label",
-        "text": "Flow Cytometry Data Quality Check Process"
+        "text": "Flow Cytometry Gated Data Upload"
       },
       {
         "type": "HorizontalLayout",
@@ -12,36 +12,6 @@
             "type": "Control",
             "scope": "#/properties/myLabDataTaskId",
             "label": "MyLabData TaskId"
-          },
-          {
-            "type": "Control",
-            "scope": "#/properties/requesterMUDID",
-            "label": "Requester MUDID"
-          }
-        ]
-      },
-      {
-        "type": "HorizontalLayout",
-        "elements": [
-          {
-            "type": "Control",
-            "scope": "#/properties/instrumentSapId",
-            "label": "Instrument SAP ID"
-          },
-          {
-            "type": "Control",
-            "scope": "#/properties/dataCleanAlgorithm",
-            "label": "Data Clean Algorithm"
-          }
-        ]
-      },
-      {
-        "type": "HorizontalLayout",
-        "elements": [
-          {
-            "type": "Control",
-            "scope": "#/properties/projectId",
-            "label": "Project ID"
           },
           {
             "type": "Control",
@@ -55,13 +25,13 @@
         "elements": [
           {
             "type": "Control",
-            "scope": "#/properties/studyNumber",
-            "label": "Study Number"
+            "scope": "#/properties/instrumentSapId",
+            "label": "Instrument SAP ID"
           },
           {
             "type": "Control",
-            "scope": "#/properties/departmentName",
-            "label": "Department Name"
+            "scope": "#/properties/requesterMUDID",
+            "label": "Requester MUDID"
           }
         ]
       },
@@ -70,11 +40,26 @@
         "elements": [
           {
             "type": "Control",
-            "scope": "#/properties/uploadexcelfile",
-            "label": "Upload metadata lab input excel file",
+            "scope": "#/properties/projectName",
+            "label": "Project Name"
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/resultRecipient",
+            "label": "Result Recipient",
             "options": {
-              "renderer": "custom-upload-excel"
+              "renderer": "custom-email-list"
             }
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/studyNumber",
+            "label": "Study Number"
           }
         ]
       }
