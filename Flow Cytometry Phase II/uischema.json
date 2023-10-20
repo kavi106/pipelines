@@ -61,7 +61,7 @@
           {
             "type": "Control",
             "scope": "#/properties/resultRecipient",
-            "label": "Result Recipient",
+            "label": "Result Recipient (type first and last name)",
             "options": {
               "renderer": "custom-email-list"
             }
