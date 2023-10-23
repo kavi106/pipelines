@@ -29,7 +29,7 @@
       {
         "type": "array"
       },
-      "type": {
+      "typeflocyto": {
         "type": "string",
         "enum": ["FlowJo","Cytobank"]
       },
