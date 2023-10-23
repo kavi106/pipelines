@@ -58,11 +58,11 @@
     "floworcyto": {
       "oneOf": [
         {
-          "const": "FlowJo",
+          "title": "FlowJo",
           "$ref": "#/definitions/flowjo"
         },
         {
-          "const": "Cytobank",
+          "title": "Cytobank",
           "$ref": "#/definitions/cytobank"
         }
       ]
