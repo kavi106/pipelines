@@ -92,7 +92,6 @@
                 "scope": "#/properties/typeflocyto",
                 "label": "",
                 "options": {
-                  "format": "radio",
                   "renderer": "custom-radio-vertical"
                 }
               }
