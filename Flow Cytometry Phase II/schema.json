@@ -4,9 +4,12 @@
       "type": "object",
       "title": "FlowJo",
       "properties": {
-        "street_address": {
-          "title": "xxx",
-          "type": "string"
+        "fl": {
+          "title": "FlowJo .wsp file in MyLabData",
+          "type": "string",
+          "options": {
+            "renderer": "custom-string"
+          }
         }
       },
       "required": ["street_address"]
@@ -16,7 +19,11 @@
       "title": "Cytobank",
       "properties": {
         "cy": {
-          "type": "string"
+          "title": "Cytobank Experiment ID",
+          "type": "string",
+          "options": {
+            "renderer": "custom-string"
+          }
         }
       },
       "required": ["cy"]
