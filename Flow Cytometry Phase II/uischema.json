@@ -80,6 +80,56 @@
             }
           }
         ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "VerticalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "scope": "#/properties/typeflocyto",
+                "options": {
+                  "format": "radio"
+                }
+              }
+            ]
+          },
+          {
+            "type": "VerticalLayout",
+            "elements": [
+              {
+                "type": "Control",
+                "label": "FlowJo .wsp file in MyLabData",
+                "scope": "#/properties/flowjofile",
+                "rule": {
+                  "effect": "ENABLE",
+                  "condition": {
+                    "scope": "#/properties/typeflocyto",
+                    "schema": {
+                      "const": "FlowJo"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Control",
+                "label": "Cytobank Experiment ID",
+                "scope": "#/properties/cytobankexptid",
+                "rule": {
+                  "effect": "ENABLE",
+                  "condition": {
+                    "scope": "#/properties/typeflocyto",
+                    "schema": {
+                      "const": "Cytobank"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   }

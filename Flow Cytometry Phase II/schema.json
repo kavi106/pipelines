@@ -28,6 +28,18 @@
       "resultRecipient":
       {
         "type": "array"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["FlowJo","Cytobank"]
+      },
+      "flowjofile":
+      {
+        "type": "string"
+      },
+      "cytobankexptid":
+      {
+        "type": "string"
       }
     },
     "required": ["myLabDataTaskId", "requesterMUDID", "instrumentSapId", "projectName", "experimentNumber", "studyNumber"]
