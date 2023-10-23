@@ -1,47 +1,76 @@
 {
-    "type": "object",
-    "properties": {
-      "myLabDataTaskId":
-      {
-        "type": "string"
+  "definitions": {
+    "flowjo": {
+      "type": "object",
+      "title": "FlowJo",
+      "properties": {
+        "fl": {
+          "type": "string"
+        }
       },
-      "requesterMUDID":
-      {
-        "type": "string"
-      },
-      "instrumentSapId":
-      {
-        "type": "string"
-      },
-      "projectNmae":
-      {
-        "type": "string"
-      },
-      "experimentNumber":
-      {
-        "type": "string"
-      },
-      "studyNumber":
-      {
-        "type": "string"
-      },
-      "resultRecipient":
-      {
-        "type": "array"
-      },
-      "typeflocyto": {
-        "type": "string",
-        "enum": ["FlowJo","Cytobank"]
-      },
-      "flowjofile":
-      {
-        "type": "string"
-      },
-      "cytobankexptid":
-      {
-        "type": "string"
-      }
+      "required": ["fl"]
     },
-    "required": ["myLabDataTaskId", "requesterMUDID", "instrumentSapId", "projectName", "experimentNumber", "studyNumber"]
-  }
-  
+    "cytobank": {
+      "type": "object",
+      "title": "Cytobank",
+      "properties": {
+        "cy": {
+          "type": "string"
+        }
+      },
+      "required": ["cy"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "myLabDataTaskId": {
+      "type": "string"
+    },
+    "requesterMUDID": {
+      "type": "string"
+    },
+    "instrumentSapId": {
+      "type": "string"
+    },
+    "projectNmae": {
+      "type": "string"
+    },
+    "experimentNumber": {
+      "type": "string"
+    },
+    "studyNumber": {
+      "type": "string"
+    },
+    "resultRecipient": {
+      "type": "array"
+    },
+    "typeflocyto": {
+      "type": "string",
+      "enum": ["FlowJo", "Cytobank"]
+    },
+    "flowjofile": {
+      "type": "string"
+    },
+    "cytobankexptid": {
+      "type": "string"
+    },
+    "floworcyto": {
+      "oneOf": [
+        {
+          "$ref": "#/definitions/flowjo"
+        },
+        {
+          "$ref": "#/definitions/cytobank"
+        }
+      ]
+    }
+  },
+  "required": [
+    "myLabDataTaskId",
+    "requesterMUDID",
+    "instrumentSapId",
+    "projectName",
+    "experimentNumber",
+    "studyNumber"
+  ]
+}
