@@ -93,7 +93,7 @@
                 "label": "",
                 "options": {
                   "format": "radio",
-                  "renderer": "custom-string"
+                  "renderer": "custom-radio-vertical"
                 }
               }
             ]
