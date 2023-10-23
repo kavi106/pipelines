@@ -12,7 +12,7 @@
           }
         }
       },
-      "required": ["street_address"]
+      "required": ["fl"]
     },
     "cytobank": {
       "type": "object",
