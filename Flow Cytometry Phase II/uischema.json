@@ -90,6 +90,7 @@
               {
                 "type": "Control",
                 "scope": "#/properties/typeflocyto",
+                "label": "",
                 "options": {
                   "format": "radio",
                   "renderer": "custom-string"
