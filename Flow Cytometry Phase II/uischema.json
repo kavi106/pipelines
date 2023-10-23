@@ -91,7 +91,8 @@
                 "type": "Control",
                 "scope": "#/properties/typeflocyto",
                 "options": {
-                  "format": "radio"
+                  "format": "radio",
+                  "renderer": "custom-string"
                 }
               }
             ]
@@ -103,6 +104,9 @@
                 "type": "Control",
                 "label": "FlowJo .wsp file in MyLabData",
                 "scope": "#/properties/flowjofile",
+                "options": {
+                  "renderer": "custom-string"
+                },
                 "rule": {
                   "effect": "ENABLE",
                   "condition": {
@@ -117,6 +121,9 @@
                 "type": "Control",
                 "label": "Cytobank Experiment ID",
                 "scope": "#/properties/cytobankexptid",
+                "options": {
+                  "renderer": "custom-string"
+                },
                 "rule": {
                   "effect": "ENABLE",
                   "condition": {
