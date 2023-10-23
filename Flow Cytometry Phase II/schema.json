@@ -4,11 +4,11 @@
       "type": "object",
       "title": "FlowJo",
       "properties": {
-        "fl": {
+        "street_address": {
           "type": "string"
         }
       },
-      "required": ["fl"]
+      "required": ["street_address"]
     },
     "cytobank": {
       "type": "object",
