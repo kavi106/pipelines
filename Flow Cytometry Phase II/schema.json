@@ -5,6 +5,7 @@
       "title": "FlowJo",
       "properties": {
         "street_address": {
+          "label": "xxx",
           "type": "string"
         }
       },
