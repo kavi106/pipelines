@@ -57,7 +57,7 @@
       "type": "string"
     },
     "floworcyto": {
-      "oneOf": [
+      "XXXX": [
         {
           "title": "FlowJo",
           "$ref": "#/definitions/flowjo"
@@ -68,9 +68,6 @@
         }
       ]
     }
-  },
-  "floworcytox": {
-    "type": "string"
   },
   "required": [
     "myLabDataTaskId",
