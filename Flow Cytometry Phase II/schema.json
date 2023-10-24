@@ -50,7 +50,7 @@
       "type": "string",
       "enum": ["FlowJo", "Cytobank"]
     },
-    "flowjofile": {
+    "flowjowspfile": {
       "type": "string"
     },
     "cytobankexptid": {
@@ -60,29 +60,29 @@
       "type": "string",
       "opts": [
         {
-          "flowjo": {
+          "title": "FlowJo",
+          "input": {
             "type": "object",
-            "title": "FlowJo",
+            "name": "flowjowspfile",
             "properties": {
               "fl": {
                 "title": "FlowJo .wsp file in MyLabData",
                 "type": "string"
               }
-            },
-            "required": ["flowjo"]
+            }
           }
         },
         {
-          "cytobank": {
+          "title": "Cytobank",
+          "input": {
             "type": "object",
-            "title": "Cytobank",
+            "name": "cytobankexptid",
             "properties": {
               "cy": {
                 "title": "Cytobank Experiment ID",
                 "type": "string"
               }
-            },
-            "required": ["cytobank"]
+            }
           }
         }
       ]
