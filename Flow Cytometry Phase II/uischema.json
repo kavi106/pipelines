@@ -144,7 +144,10 @@
           {
             "type": "Control",
             "label": "FloJo or Cytobank",
-            "scope": "#/properties/floworcyto"
+            "scope": "#/properties/floworcyto",
+            "options": {
+              "renderer": "custom-anyof-string"
+            }
           }
         ]
       }
