@@ -22,17 +22,13 @@
     "resultRecipient": {
       "type": "array"
     },
-    "typeflocyto": {
-      "type": "string",
-      "enum": ["FlowJo", "Cytobank"]
-    },
     "flowjowspfile": {
       "type": "string"
     },
     "cytobankexptid": {
       "type": "string"
     },
-    "floworcyto": {
+    "flowjoorcyto": {
       "type": "string",
       "opts": [
         {
