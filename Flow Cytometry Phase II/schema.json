@@ -60,10 +60,30 @@
       "type": "string",
       "opts": [
         {
-          "title": "FlowJo"
+          "title": "FlowJo",
+          "input": {
+            "type": "object",
+            "name": "flowjowspfile",
+            "properties": {
+              "fl": {
+                "title": "FlowJo .wsp file in MyLabData",
+                "type": "string"
+              }
+            }
+          }
         },
         {
-          "title": "Cytobank"
+          "title": "Cytobank",
+          "input": {
+            "type": "object",
+            "name": "cytobankexptid",
+            "properties": {
+              "cy": {
+                "title": "Cytobank Experiment ID",
+                "type": "string"
+              }
+            }
+          }
         }
       ]
     }
