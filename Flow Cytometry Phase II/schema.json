@@ -47,6 +47,7 @@
     "instrumentSapId",
     "projectName",
     "experimentNumber",
+    "studyNumber",
     "flowjoorcytotext"
   ]
 }
