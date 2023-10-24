@@ -78,6 +78,14 @@
             "options": {
               "renderer": "custom-string"
             }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/spacer",
+            "label": "Spacer",
+            "options": {
+              "renderer": "custom-spacer"
+            }
           }
         ]
       },

@@ -25,6 +25,9 @@
     "flowjoorcytotext": {
       "type": "string"
     },
+    "spacer": {
+      "type": "string"
+    },
     "flowjoorcyto": {
       "type": "string",
       "opts": [
