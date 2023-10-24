@@ -49,6 +49,8 @@
     "requesterMUDID",
     "instrumentSapId",
     "projectName",
-    "experimentNumber"
+    "experimentNumber",
+    "flowjowspfile",
+    "cytobankexptid"
   ]
 }
