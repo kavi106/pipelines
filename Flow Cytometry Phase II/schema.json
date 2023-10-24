@@ -57,7 +57,7 @@
       "type": "string"
     },
     "floworcyto": {
-      "XXXX": [
+      "opts": [
         {
           "title": "FlowJo",
           "$ref": "#/definitions/flowjo"
