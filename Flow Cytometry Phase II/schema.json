@@ -1,28 +1,4 @@
 {
-  "definitions": {
-    "flowjo": {
-      "type": "object",
-      "title": "FlowJo",
-      "properties": {
-        "fl": {
-          "title": "FlowJo .wsp file in MyLabData",
-          "type": "string"
-        }
-      },
-      "required": ["flowjo"]
-    },
-    "cytobank": {
-      "type": "object",
-      "title": "Cytobank",
-      "properties": {
-        "cy": {
-          "title": "Cytobank Experiment ID",
-          "type": "string"
-        }
-      },
-      "required": ["cytobank"]
-    }
-  },
   "type": "object",
   "properties": {
     "myLabDataTaskId": {
