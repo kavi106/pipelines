@@ -6,10 +6,7 @@
       "properties": {
         "fl": {
           "title": "FlowJo .wsp file in MyLabData",
-          "type": "string",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "type": "string"
         }
       },
       "required": ["fl"]
@@ -20,10 +17,7 @@
       "properties": {
         "cy": {
           "title": "Cytobank Experiment ID",
-          "type": "string",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "type": "string"
         }
       },
       "required": ["cy"]
