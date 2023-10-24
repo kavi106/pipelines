@@ -77,7 +77,6 @@
     "requesterMUDID",
     "instrumentSapId",
     "projectName",
-    "experimentNumber",
-    "studyNumber"
+    "experimentNumber"
   ]
 }
