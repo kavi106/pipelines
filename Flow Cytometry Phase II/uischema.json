@@ -74,7 +74,7 @@
           {
             "type": "Control",
             "label": "FloJo or Cytobank",
-            "scope": "#/properties/floworcyto",
+            "scope": "#/properties/flowjoorcyto",
             "options": {
               "renderer": "custom-anyof-string"
             }
