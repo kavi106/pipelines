@@ -146,7 +146,7 @@
             "label": "FloJo or Cytobank",
             "scope": "#/properties/floworcyto",
             "options": {
-              "renderer": "custom-string"
+              "renderer": "custom-anyof-string"
             }
           }
         ]
