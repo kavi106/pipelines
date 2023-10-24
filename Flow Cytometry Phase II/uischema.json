@@ -73,6 +73,19 @@
         "elements": [
           {
             "type": "Control",
+            "scope": "#/properties/studyNumber",
+            "label": "Study Number",
+            "options": {
+              "renderer": "custom-string"
+            }
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
             "label": "FloJo or Cytobank",
             "scope": "#/properties/flowjoorcyto",
             "options": {
