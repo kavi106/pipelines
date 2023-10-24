@@ -61,29 +61,13 @@
       "opts": [
         {
           "title": "FlowJo",
-          "input": {
-            "type": "object",
-            "name": "flowjowspfile",
-            "properties": {
-              "fl": {
-                "title": "FlowJo .wsp file in MyLabData",
-                "type": "string"
-              }
-            }
-          }
+          "name": "flowjowspfile",
+          "label": "FlowJo .wsp file in MyLabData"
         },
         {
           "title": "Cytobank",
-          "input": {
-            "type": "object",
-            "name": "cytobankexptid",
-            "properties": {
-              "cy": {
-                "title": "Cytobank Experiment ID",
-                "type": "string"
-              }
-            }
-          }
+          "name": "cytobankexptid",
+          "label": "Cytobank Experiment ID"
         }
       ]
     }
