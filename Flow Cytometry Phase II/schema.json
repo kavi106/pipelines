@@ -57,6 +57,7 @@
       "type": "string"
     },
     "floworcyto": {
+      "type": "string",
       "opts": [
         {
           "flowjo": {
