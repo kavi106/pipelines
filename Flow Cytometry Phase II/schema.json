@@ -9,7 +9,7 @@
           "type": "string"
         }
       },
-      "required": ["fl"]
+      "required": ["flowjo"]
     },
     "cytobank": {
       "type": "object",
@@ -20,7 +20,7 @@
           "type": "string"
         }
       },
-      "required": ["cy"]
+      "required": ["cytobank"]
     }
   },
   "type": "object",
