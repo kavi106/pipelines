@@ -137,16 +137,6 @@
             ]
           }
         ]
-      },
-      {
-        "type": "HorizontalLayout",
-        "elements": [
-          {
-            "type": "Control",
-            "label": "FloJo or Cytobank",
-            "scope": "#/properties/floworcyto"
-          }
-        ]
       }
     ]
   }
