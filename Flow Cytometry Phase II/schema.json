@@ -59,12 +59,30 @@
     "floworcyto": {
       "opts": [
         {
-          "title": "FlowJo",
-          "$ref": "#/definitions/flowjo"
+          "flowjo": {
+            "type": "object",
+            "title": "FlowJo",
+            "properties": {
+              "fl": {
+                "title": "FlowJo .wsp file in MyLabData",
+                "type": "string"
+              }
+            },
+            "required": ["flowjo"]
+          }
         },
         {
-          "title": "Cytobank",
-          "$ref": "#/definitions/cytobank"
+          "cytobank": {
+            "type": "object",
+            "title": "Cytobank",
+            "properties": {
+              "cy": {
+                "title": "Cytobank Experiment ID",
+                "type": "string"
+              }
+            },
+            "required": ["cytobank"]
+          }
         }
       ]
     }
