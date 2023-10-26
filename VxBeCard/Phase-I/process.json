@@ -1,0 +1,26 @@
+{
+    "jsonforms": {
+        "schema": "schema.json",
+        "ui_schema": "uischema.json",
+        "data": "data.json"
+    },
+    "exits": [
+        {
+            "kwargs": {
+                "input_file_pattern": "^((?!ursgal|[Cc]ompensat).)*\\.fcs$",
+                "mylabdata_api_backend_url": "mylabdata-files.uat.corpnet2.com",
+                "flow_name": "TecQC Pipeline",
+                "prefect_netloc": "https://flink.dev.a-launch-i.gsk.com/api/deployments/fd022dd6-fb27-45d3-b779-f147df62e117/create_flow_run"
+            },
+            "type": "prefect",
+            "additional_files": {
+                "pipeline": "tec_qc_prefect_pipeline.py",
+                "base_input_json": "tec_qc_config.json",
+                "ursgal_credentials": "credentials_lookup.json"
+            }
+        }
+    ],
+    "button_title": "Data Clean",
+    "button_active": 1,
+    "button_order": 1
+}

@@ -1,0 +1,23 @@
+{
+    "jsonforms": {
+        "schema": "schema.json",
+        "ui_schema": "uischema.json",
+        "data": "data.json"
+    },
+    "exits": [
+        {
+            "kwargs": {
+                "path": "./",
+                "sort_keys": "False"
+            },
+            "type": "local_json"
+        }
+    ],
+    "exit_button_title": "Gated Cell Population Data Upload",
+    "exit_button_active": 1,
+    "exit_button_order": 2,
+    "image": "FlowCytometryclipart3.png",
+    "title": "Flow Cytometry - Vx-Belgium",
+    "tags": "",
+    "order": 1
+}
