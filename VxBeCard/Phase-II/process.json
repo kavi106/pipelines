@@ -13,7 +13,7 @@
             "type": "local_json"
         }
     ],
-    "button_title": "Gated Cell Population Data Upload",
+    "button_title": "Extract FlowJo statitics and upload",
     "button_active": 1,
     "button_order": 2
 }
