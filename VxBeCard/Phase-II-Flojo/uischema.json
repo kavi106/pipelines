@@ -3,7 +3,7 @@
     "elements": [
       {
         "type": "Label",
-        "text": "Flow Cytometry Gated Data Upload"
+        "text": "Extract FlowJo statitics and upload"
       },
       {
         "type": "HorizontalLayout",
