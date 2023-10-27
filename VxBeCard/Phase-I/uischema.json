@@ -32,10 +32,7 @@
         {
           "type": "Control",
           "scope": "#/properties/instrumentSapId",
-          "label": "Instrument SAP ID",
-          "options": {
-            "renderer": "custom-string"
-          }
+          "label": "Instrument SAP ID"
         },
         {
           "type": "Control",
