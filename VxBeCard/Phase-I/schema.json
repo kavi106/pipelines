@@ -24,7 +24,7 @@
     "experimentNumber": {
       "type": "string",
       "maxLength": 200,
-      "pattern": "^0(9|4)\\d{8}$"
+      "pattern": "^ELN\\.*$"
     },
     "studyNumber": {
       "type": "string",
