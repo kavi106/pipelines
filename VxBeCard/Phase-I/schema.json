@@ -25,7 +25,7 @@
       "type": "string",
       "maxLength": 200,
       "minLength": 4,
-      "pattern": "^ELN\\.*$"
+      "pattern": "^ELN.*$"
     },
     "studyNumber": {
       "type": "string",
