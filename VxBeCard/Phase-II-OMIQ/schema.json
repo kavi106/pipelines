@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "myLabDataTaskId": {
+      "type": "string"
+    },
+    "requesterMUDID": {
+      "type": "string"
+    },
+    "instrumentSapId": {
+      "type": "string"
+    },
+    "projectNmae": {
+      "type": "string"
+    },
+    "experimentNumber": {
+      "type": "string"
+    },
+    "studyNumber": {
+      "type": "string"
+    },
+    "resultRecipient": {
+      "type": "array"
+    },
+    "omiqid": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "myLabDataTaskId",
+    "requesterMUDID",
+    "instrumentSapId",
+    "projectName",
+    "experimentNumber",
+    "studyNumber",
+    "omiqid"
+  ]
+}

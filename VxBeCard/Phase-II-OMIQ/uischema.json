@@ -81,23 +81,10 @@
           },
           {
             "type": "Control",
-            "scope": "#/properties/spacer",
-            "label": "Spacer",
+            "scope": "#/properties/omiqid",
+            "label": "OMIQ Id",
             "options": {
-              "renderer": "custom-spacer"
-            }
-          }
-        ]
-      },
-      {
-        "type": "HorizontalLayout",
-        "elements": [
-          {
-            "type": "Control",
-            "label": "FloJo or Cytobank",
-            "scope": "#/properties/flowjoorcyto",
-            "options": {
-              "renderer": "custom-anyof-string"
+              "renderer": "custom-string"
             }
           }
         ]

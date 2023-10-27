@@ -1,0 +1,94 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Label",
+        "text": "Flow Cytometry Gated Data Upload"
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/myLabDataTaskId",
+            "label": "MyLabData TaskId",
+            "options": {
+              "renderer": "custom-string"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/experimentNumber",
+            "label": "Experimant Number (ELN)",
+            "options": {
+              "renderer": "custom-string"
+            }
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/instrumentSapId",
+            "label": "Instrument SAP ID",
+            "options": {
+              "renderer": "custom-string"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/requesterMUDID",
+            "label": "Requester MUDID",
+            "options": {
+              "renderer": "custom-string"
+            }
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/projectName",
+            "label": "Project Name",
+            "options": {
+              "renderer": "custom-string"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/resultRecipient",
+            "label": "Result Recipient (type first and last name)",
+            "options": {
+              "renderer": "custom-email-list"
+            }
+          }
+        ]
+      },
+      {
+        "type": "HorizontalLayout",
+        "elements": [
+          {
+            "type": "Control",
+            "scope": "#/properties/studyNumber",
+            "label": "Study Number",
+            "options": {
+              "renderer": "custom-string"
+            }
+          },
+          {
+            "type": "Control",
+            "scope": "#/properties/cytobankexptid",
+            "label": "Cytobank Experiment ID",
+            "options": {
+              "renderer": "custom-string"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

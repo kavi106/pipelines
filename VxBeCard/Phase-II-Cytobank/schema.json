@@ -22,26 +22,8 @@
     "resultRecipient": {
       "type": "array"
     },
-    "flowjoorcytotext": {
+    "cytobankexptid": {
       "type": "string"
-    },
-    "spacer": {
-      "type": "string"
-    },
-    "flowjoorcyto": {
-      "type": "string",
-      "opts": [
-        {
-          "title": "FlowJo",
-          "name": "flowjoorcytotext",
-          "label": "FlowJo .wsp file in MyLabData"
-        },
-        {
-          "title": "Cytobank",
-          "name": "flowjoorcytotext",
-          "label": "Cytobank Experiment ID"
-        }
-      ]
     }
   },
   "required": [
@@ -51,6 +33,6 @@
     "projectName",
     "experimentNumber",
     "studyNumber",
-    "flowjoorcytotext"
+    "cytobankexptid"
   ]
 }
