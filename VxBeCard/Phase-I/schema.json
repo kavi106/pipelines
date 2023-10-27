@@ -23,7 +23,8 @@
     },
     "experimentNumber": {
       "type": "string",
-      "maxLength": 200
+      "maxLength": 200,
+      "pattern": '.*example\\.com'
     },
     "studyNumber": {
       "type": "string",
