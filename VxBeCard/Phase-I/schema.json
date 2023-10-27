@@ -3,26 +3,31 @@
   "properties": {
     "myLabDataTaskId": {
       "type": "string",
-      "minLength": 3
+      "maxLength": 200
     },
     "requesterMUDID": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "instrumentSapId": {
-      "type": "string"
+      "type": "number",
+      "maxLength": 200
     },
     "dataCleanAlgorithm": {
       "type": "string",
       "enum": ["FlowAI (1.30.0)","FlowCut (1.10.0)","PeacoQC (1.10.0)"]
     },
     "projectId": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "experimentNumber": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "studyNumber": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "resultRecipient": {
       "type": "array"

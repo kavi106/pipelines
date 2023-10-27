@@ -11,7 +11,7 @@
         {
           "type": "Control",
           "scope": "#/properties/myLabDataTaskId",
-          "label": "MyLabData TaskIdxxx",
+          "label": "MyLabData TaskId",
           "options": {
             "renderer": "custom-string"
           }
