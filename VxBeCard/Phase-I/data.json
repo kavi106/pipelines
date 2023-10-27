@@ -1,9 +1,6 @@
 {
   "myLabDataTaskId": "23-10001016-H6",
-  "instrumentSapId": "354557",
-  "projectId": "111",
-  "experimentNumber": "222",
-  "studyNumber": "333",
+  "experimentNumber": "ELN",
   "departmentName": "BE Immunology",
   "dataCleanAlgorithm": "FlowAI (1.30.0)"
 }
