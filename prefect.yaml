@@ -1,0 +1,33 @@
+# Welcome to your prefect.yaml file! You can use this file for storing and managing
+# configuration for deploying your flows. We recommend committing this file to source
+# control along with your flow code.
+
+# Generic metadata about this project
+prefect-version: 2.13.8
+
+pull:
+    - prefect.deployments.steps.set_working_directory:
+        directory: /home/ursgal
+    - prefect.deployments.steps.git_clone:
+        repository: https://github.com/gsk-tech/dso-app-vx-be-jsonforms.git
+        branch: master
+        credentials: "{{ prefect.blocks.github-credentials.jsonforms-token }}"
+
+# deployment configurations
+deployments:
+  - # base metadata
+    name: "TecQC Pipeline Deployment"
+    version: null
+    tags: []
+    description: null
+    schedule: null
+
+    # flow-specific fields
+    entrypoint: "VxBeCard/Phase-I/tec_qc_prefect_pipeline.py:run_pipeline"
+    parameters: {}
+
+    # infra-specific fields
+    work_pool:
+      name: "launchi-uat-cluster"
+      work_queue_name: "default"
+      job_variables: {}

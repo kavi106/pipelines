@@ -7,10 +7,10 @@
     "exits": [
         {
             "kwargs": {
-                "input_file_pattern": "^((?!ursgal|[Cc]ompensat).)*\\.fcs$",
+                "input_file_pattern": "^((?!ursgal|[Cc]ompensat|filter_fcs_|cytocluster_qc_).)*\\.fcs$",
                 "mylabdata_api_backend_url": "mylabdata-files.uat.corpnet2.com",
                 "flow_name": "TecQC Pipeline",
-                "prefect_netloc": "https://flink.dev.a-launch-i.gsk.com/api/deployments/fd022dd6-fb27-45d3-b779-f147df62e117/create_flow_run"
+                "prefect_netloc": "https://flink.dev.a-launch-i.gsk.com/api/deployments/0b26bad3-bb47-4e4f-b0a8-a21d6719a9e8/create_flow_run"
             },
             "type": "prefect",
             "additional_files": {

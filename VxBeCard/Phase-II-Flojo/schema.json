@@ -2,28 +2,36 @@
   "type": "object",
   "properties": {
     "myLabDataTaskId": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "requesterMUDID": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "instrumentSapId": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "projectNmae": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "experimentNumber": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200,
+      "prefix": "ELN"
     },
     "studyNumber": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     },
     "resultRecipient": {
       "type": "array"
     },
     "flowjowspfile": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 200
     }
   },
   "required": [

@@ -16,9 +16,5 @@
             "storage_base_uri": "azure://a-launch-i.gsk.com/uat"
         }
     },
-    "default_pipeline_config_json": "default_pipeline_config_flink.json",
-    "pipeline_configuration": {
-        "--parallelism": 10,
-        "--max_bundle_size": 1
-    }
+    "pipeline_configuration": {}
 }

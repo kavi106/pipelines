@@ -3,10 +3,16 @@
         "--job_name": "ursgal",
         "--runner": "FlinkRunner",
         "--flink_version": "1.16",
-        "--flink_master": "http://localhost:8081",
+        "--flink_master": "https://flink.dev.a-launch-i.gsk.com",
         "--environment_type": "EXTERNAL",
-        "--environment_config": "localhost:8081",
+        "--environment_config": "localhost:50000",
         "--save_main_session": null,
-        "--flink_submit_uber_jar": null
+        "--flink_submit_uber_jar": null,
+        "--number_of_execution_retries": 5,
+        "--checkpointing_interval": 1000,
+        "--execution_mode_for_batch": "BATCH_FORCED",
+        "--state_backend": "filesystem",
+        "--state_backend_storage_path": "file:/tmp/beam_state",
+        "--auto_watermark_interval": 500
     }
 }

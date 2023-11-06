@@ -17,7 +17,7 @@
       "type": "string",
       "enum": ["FlowAI (1.30.0)","FlowCut (1.10.0)","PeacoQC (1.10.0)"]
     },
-    "projectId": {
+    "projectName": {
       "type": "string",
       "maxLength": 200
     },
@@ -39,7 +39,7 @@
     "requesterMUDID",
     "instrumentSapId",
     "dataCleanAlgorithm",
-    "projectId",
+    "projectName",
     "experimentNumber",
     "studyNumber"
   ]

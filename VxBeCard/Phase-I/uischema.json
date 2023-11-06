@@ -52,7 +52,7 @@
       "elements": [
         {
           "type": "Control",
-          "scope": "#/properties/projectId",
+          "scope": "#/properties/projectName",
           "label": "Project Name",
           "options": {
             "renderer": "custom-string"
@@ -82,7 +82,7 @@
         {
           "type": "Control",
           "scope": "#/properties/resultRecipient",
-          "label": "Result Recipient",
+          "label": "Result Recipient (type first and last name)",
           "options": {
             "renderer": "custom-email-list"
           }
