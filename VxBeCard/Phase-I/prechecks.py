@@ -1,6 +1,6 @@
 
 def excelValidation(**kwargs):
-    return 1, "Success", {"xx": kwargs["aa"]}
+    return 200, "Success", {"xx": kwargs["aa"]}
 
 def myLabDataValidation(**kwargs):
-    return 0, "Failure", {"xx": kwargs["aa"]}
+    return 400, "Failure", {"xx": kwargs["aa"]}
