@@ -13,8 +13,8 @@
                 "prefect_netloc": "https://flink.dev.a-launch-i.gsk.com/api/deployments/0b26bad3-bb47-4e4f-b0a8-a21d6719a9e8/create_flow_run"
             },
             "type": "prefect",
+            "pipeline": "tec_qc_prefect_pipeline.py",
             "additional_files": {
-                "pipeline": "tec_qc_prefect_pipeline.py",
                 "base_input_json": "tec_qc_config.json",
                 "ursgal_credentials": "credentials_lookup.json"
             }
