@@ -8,5 +8,10 @@
         "name": "MyLabData Validation",
         "description": "Verify that fcs files exist in MyLabdata.",
         "function": "myLabDataValidation"
+    },
+    {
+        "name": "Test Validation",
+        "description": "Verify that xxx yyy.",
+        "function": "testValidation"
     }
 ]
