@@ -1,8 +1,8 @@
 {
     "jsonforms": {
-        "schema": "schema.json",
-        "ui_schema": "uischema.json",
-        "data": "data.json"
+        "schema": "jsonforms/schema.json",
+        "ui_schema": "jsonforms/uischema.json",
+        "data": "jsonforms/data.json"
     },
     "exits": [
         {
