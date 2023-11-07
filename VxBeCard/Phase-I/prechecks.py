@@ -10,4 +10,4 @@ def myLabDataValidation(**kwargs):
 
 def testValidation(**kwargs):
     sleep(3)
-    return 400, "Failure", {}
+    return 200, "Success", {}
