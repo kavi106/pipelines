@@ -6,7 +6,7 @@ def excelValidation(**kwargs):
 
 def myLabDataValidation(**kwargs):
     sleep(5)
-    return 200, "0 fsc files found !", {"xx": "myLabDataValidation", "cc": "XYZ"}
+    return 400, "0 fsc files found !", {"xx": "myLabDataValidation", "cc": "XYZ"}
 
 def testValidation(**kwargs):
     sleep(3)
