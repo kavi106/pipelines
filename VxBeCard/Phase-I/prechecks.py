@@ -10,4 +10,7 @@ def myLabDataValidation(**kwargs):
 
 def testValidation(**kwargs):
     sleep(3)
-    return 200, "Success !!!", {}
+    if kwargs["studyNumber"] == '11':
+        return 200, "Success !!!", {}
+    else:
+        return 400, "Error !!!", {}
