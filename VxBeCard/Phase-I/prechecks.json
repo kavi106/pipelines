@@ -13,10 +13,5 @@
         "name": "Test Validation",
         "description": "Verify that xxx yyy.",
         "function": "testValidation"
-    },
-    {
-        "name": "Test Validation",
-        "description": "Submit data clean process.",
-        "function": "submitForm"
     }
 ]
