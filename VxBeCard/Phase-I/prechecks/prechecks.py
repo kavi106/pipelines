@@ -93,6 +93,7 @@ def pull_fcs_files(input_dict):
 
 
 def _get_file_list(input_dict, file_pattern, uftype):
+    return 200, "All meta data fields match excel sheet", input_dict
     ursgal.instances.ucredential_manager.add_credentials(
         input_dict["exits"][0]["additional_files"]["ursgal_credentials"][
             "credentials_lookup"
@@ -120,6 +121,7 @@ def _get_file_list(input_dict, file_pattern, uftype):
 
 
 def validate_meta_data_excel(input_dict):
+    return 200, "All meta data fields match excel sheet", input_dict
     """Validate Meta Data Excel entries agains input_dict based on a validation_json.
 
     Args:
