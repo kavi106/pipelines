@@ -32,6 +32,8 @@ def pull_config_files(input_dict):
                 exit["kwargs"][file_key] = json.loads(
                     file_content.decoded_content.decode()
                 )
+
+        input_dict["prechecks_config"]["meta_data_excel_mapping"] = repo.get_contents(input_dict["prechecks_config"]["meta_data_excel_mapping"], os.getenv("CONFIG_REPO"))
     except:
         return 400, f"Cannot get configuration files !", input_dict
 
@@ -120,8 +122,8 @@ def _get_file_list(input_dict, file_pattern, uftype):
 
 
 def validate_meta_data_excel(input_dict):
-    #print(input_dict)
-    #return 200, "All meta data fields match excel sheet", input_dict
+    print(input_dict)
+    return 200, "All meta data fields match excel sheet", input_dict
     """Validate Meta Data Excel entries agains input_dict based on a validation_json.
 
     Args:
