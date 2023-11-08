@@ -1,8 +1,24 @@
 import asyncio
+
+import httpx
 from prefect import flow, unmapped, tags, get_client
 
 import ursgal
 from ursgal.uhelpers.prefect import run_unode, simplify_output_names
+
+
+async def notify_app_hook_wrapper(flow, flow_run, state):
+    wid = flow_run.name.replace("ursgal-", "")
+    await notify_app(wid=wid, state=state.name)
+
+
+async def notify_app(wid, state=None):
+    async with httpx.AsyncClient(verify=False) as requester:
+        response = await requester.post(
+            "https://app.dev.a-launch-i.gsk.com/send_notification",
+            json={"wid": wid, "state": state},
+        )
+    return response
 
 
 async def create_concurency_limit(tag, limit):
@@ -23,15 +39,16 @@ async def delete_concurrency_limit(flow, flow_run, state):
 @flow(
     name="TecQC Pipeline",
     flow_run_name="ursgal-{wid}",
-    on_crashed=[delete_concurrency_limit],
-    on_failure=[delete_concurrency_limit],
-    on_completion=[delete_concurrency_limit],
+    on_crashed=[delete_concurrency_limit, notify_app_hook_wrapper],
+    on_failure=[delete_concurrency_limit, notify_app_hook_wrapper],
+    on_completion=[delete_concurrency_limit, notify_app_hook_wrapper],
     on_cancellation=[delete_concurrency_limit],
 )
 def run_pipeline(wid, input_json):
     urd = ursgal.URunDict(input_json["urun_dict"])
     urd.wid = wid
     loop = asyncio.get_event_loop()
+    loop.run_until_complete(notify_app(wid=wid, state="Running"))
     loop.run_until_complete(create_concurency_limit(tag=f"parallelism_{wid}", limit=30))
     loop.close()
     creds = input_json.get("credentials_lookup", {})

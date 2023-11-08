@@ -1,0 +1,16 @@
+[
+    {
+        "input_json_field": "task_id",
+        "sheet": "Metadata Input",
+        "row": 5,
+        "column": 5,
+        "NOTE": "Column and row needs to be integers!"
+    },
+    {
+        "input_json_field": "eln number",
+        "sheet": "Metadata Input",
+        "row": 17,
+        "column": 5,
+        "NOTE": "Column and row needs to be integers!"
+    }
+]

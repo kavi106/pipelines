@@ -1,14 +1,14 @@
 [
     {
         "description": "Pulling additional configuration files.",
-        "function": "pullConfigFiles"
+        "function": "pull_config_files"
     },
     {
         "description": "Pulling fcs files from MyLabData.",
-        "function": "pullFcsFiles"
+        "function": "pull_fcs_files"
     },
     {
         "description": "Validating excel metadata and csv plate files.",
-        "function": "validateExcelMetadataFile"
+        "function": "validate_meta_data_excel"
     }
 ]
