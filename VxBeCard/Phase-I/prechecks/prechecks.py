@@ -142,7 +142,7 @@ def validate_meta_data_excel(input_dict):
     Returns:
         _type_: _description_
     """
-    checks = json.load(open(input_dict["prechecks_config"]["meta_data_excel_mapping"]))
+    checks = input_dict["prechecks_config"]["meta_data_excel_mapping"]
 
     excel_files = _get_file_list(
         input_dict,
