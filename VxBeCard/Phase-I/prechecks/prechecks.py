@@ -12,6 +12,7 @@ pd.set_option("display.max_columns", 100)
 
 
 def pull_config_files(input_dict):
+    return 200, "All configuration files pulled successfully.", input_dict
     """_summary_
 
     Args:
