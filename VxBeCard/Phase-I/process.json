@@ -4,7 +4,7 @@
         "ui_schema": "jsonforms/uischema.json",
         "data": "jsonforms/data.json"
     },
-    "prechecks": {
+    "prechecks_config": {
         "input_file_pattern": "^((?!ursgal|[Cc]ompensat|filter_fcs_|cytocluster_qc_).)*\\.fcs$",
         "mylabdata_api_backend_url": "mylabdata-files.uat.corpnet2.com",
         "meta_data_excel_mapping": "prechecks/meta_data_excel_mapping.json",

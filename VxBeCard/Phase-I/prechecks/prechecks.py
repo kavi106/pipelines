@@ -50,7 +50,7 @@ def pull_fcs_files(input_dict):
     try:
         fcs_uri_list = _get_file_list(
             input_dict,
-            input_dict["prechecks"]["input_file_pattern"],
+            input_dict["prechecks_config"]["input_file_pattern"],
             ursgal.uftypes.flow_cytometry.FCS,
         )
         # try:
@@ -100,10 +100,10 @@ def _get_file_list(input_dict, file_pattern, uftype):
     )
     equipment_id = input_dict["instrumentSapId"]
     task_id = input_dict["myLabDataTaskId"]
-    storage_base = f"mylabdata://{input_dict['prechecks']['mylabdata_api_backend_url']}/{equipment_id}/{task_id}"
+    storage_base = f"mylabdata://{input_dict['prechecks_config']['mylabdata_api_backend_url']}/{equipment_id}/{task_id}"
 
     ursgal.config["certificates"][
-        input_dict["prechecks"]["mylabdata_api_backend_url"]
+        input_dict["prechecks_config"]["mylabdata_api_backend_url"]
     ] = False
     try:
         file_list_mld = ursgal.UFile(
@@ -120,8 +120,8 @@ def _get_file_list(input_dict, file_pattern, uftype):
 
 
 def validate_meta_data_excel(input_dict):
-    print(input_dict)
-    return 200, "All meta data fields match excel sheet", input_dict
+    #print(input_dict)
+    #return 200, "All meta data fields match excel sheet", input_dict
     """Validate Meta Data Excel entries agains input_dict based on a validation_json.
 
     Args:
@@ -133,11 +133,11 @@ def validate_meta_data_excel(input_dict):
     Returns:
         _type_: _description_
     """
-    checks = json.load(open(input_dict["prechecks"]["meta_data_excel_mapping"]))
+    checks = json.load(open(input_dict["prechecks_config"]["meta_data_excel_mapping"]))
 
     excel_files = _get_file_list(
         input_dict,
-        input_dict["prechecks"]["meta_data_input_file_pattern"],
+        input_dict["prechecks_config"]["meta_data_input_file_pattern"],
         uftype=ursgal.uftypes.mx.METADATA_XLSX,
     )
     if len(excel_files) != 1:
