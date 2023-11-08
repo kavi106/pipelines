@@ -44,7 +44,7 @@ def pullConfigFiles(**kwargs):
 
 def pullFcsFiles(**kwargs):
     #ursgal_credentials["credentials_lookup"]
-    print(kwargs)
+    print(kwargs["exits"])
     sleep(5)
     kwargs["ws"] = "myLabDataValidation"
     kwargs["cc"] = "XYZ"
