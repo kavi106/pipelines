@@ -17,32 +17,29 @@ from github import Auth, Github
 from time import sleep
 
 def pullConfigFiles(**kwargs):
-    for exit in kwargs["exits"]:
-        print(exit)
-    return 200, "Success !!", kwargs
+
+    #return 200, "Success !!", kwargs
     
     try:
         auth = Auth.Token(os.getenv("CONFIG_REPO_TOKEN"))
         g = Github(auth=auth)
         repo = g.get_repo(os.getenv("CONFIG_REPO"))
         folder = kwargs["folder"]
-        filename = kwargs["additional_files"]["base_input_json"]
-        file_content = repo.get_contents(
-            f"{folder}/{filename}", os.getenv("CONFIG_REPO_BRANCH")
-        )
-        kwargs["base_input_json"] = json.loads(file_content.decoded_content.decode())
+        for exit in kwargs["exits"]:
+            filename = exit["additional_files"]["base_input_json"]
+            file_content = repo.get_contents(
+                f"{folder}/{filename}", os.getenv("CONFIG_REPO_BRANCH")
+            )
+            exit["additional_files"]["base_input_json"] = json.loads(file_content.decoded_content.decode())
+            filename = exit["additional_files"]["ursgal_credentials"]
+            file_content = repo.get_contents(
+                f"{folder}/{filename}", os.getenv("CONFIG_REPO_BRANCH")
+            )
+            exit["additional_files"]["ursgal_credentials"] = json.loads(file_content.decoded_content.decode())
     except:
-        return (400, f"Cannot get tec_qc_config.json from repo !", kwargs)
-    try:
-        filename = kwargs["additional_files"]["ursgal_credentials"]
-        file_content = repo.get_contents(
-            f"{folder}/{filename}", os.getenv("CONFIG_REPO_BRANCH")
-        )
-        kwargs["ursgal_credentials"] = json.loads(file_content.decoded_content.decode())
-    except:
-        return (400, f"Cannot get credentials_lookup.json from repo !", kwargs)
+        return (400, f"Cannot get configuration files !", kwargs)
 
-    #print(kwargs)
+    print(kwargs)
     return 200, "All configuration files pulled successfully.", kwargs
 
 def pullFcsFiles(**kwargs):
