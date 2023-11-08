@@ -11,7 +11,7 @@ from github import Auth, Github
 #pd.set_option("display.max_columns", 100)
 
 
-def pull_config_files(input_dict):
+def pull_config_files(**input_dict):
     return 200, "All configuration files pulled successfully.", input_dict
     """_summary_
 
