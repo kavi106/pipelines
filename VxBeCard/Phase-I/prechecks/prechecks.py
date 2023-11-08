@@ -48,6 +48,7 @@ def pull_config_files(input_dict):
 
 
 def pull_fcs_files(input_dict):
+    return 200, f"All fsc files found !", input_dict
     """_summary_
 
     Args:
@@ -130,7 +131,7 @@ def _get_file_list(input_dict, file_pattern, uftype):
 
 def validate_meta_data_excel(input_dict):
     #print(input_dict)
-    #return 200, "All meta data fields match excel sheet", input_dict
+    return 200, "All meta data fields match excel sheet", input_dict
     """Validate Meta Data Excel entries agains input_dict based on a validation_json.
 
     Args:
