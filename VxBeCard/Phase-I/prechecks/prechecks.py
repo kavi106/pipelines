@@ -144,11 +144,17 @@ def validate_meta_data_excel(input_dict):
     """
     checks = input_dict["prechecks_config"]["meta_data_excel_mapping"]
 
-    excel_files = _get_file_list(
-        input_dict,
-        input_dict["prechecks_config"]["meta_data_input_file_pattern"],
-        uftype=ursgal.uftypes.mx.METADATA_XLSX,
-    )
+    print(checks)
+
+    try:
+        excel_files = _get_file_list(
+            input_dict,
+            input_dict["prechecks_config"]["meta_data_input_file_pattern"],
+            uftype=ursgal.uftypes.mx.METADATA_XLSX,
+        )
+    except:
+        return 400, "Error getting Excel Metadata file !", input_dict
+    
     if len(excel_files) != 1:
         return 400, "Found more than 1 execl sheet matchin pattern !", input_dict
 
