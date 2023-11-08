@@ -38,14 +38,14 @@ def pullConfigFiles(**kwargs):
     except:
         return (400, f"Cannot get credentials_lookup.json from repo !", kwargs)
 
-    print(kwargs)
+    #print(kwargs)
     return 200, "All configuration files pulled successfully.", kwargs
 
 def pullFcsFiles(**kwargs):
     sleep(5)
     kwargs["ws"] = "myLabDataValidation"
     kwargs["cc"] = "XYZ"
-    print(kwargs)
+    print(kwargs["base_input_json"])
     return 400, "0 fsc files found !", kwargs
 
 def validateExcelMetadataFile(**kwargs):
