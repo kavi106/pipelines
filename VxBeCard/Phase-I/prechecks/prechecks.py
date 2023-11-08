@@ -32,8 +32,8 @@ def pull_config_files(input_dict):
                 exit["kwargs"][file_key] = json.loads(
                     file_content.decoded_content.decode()
                 )
-        print(os.path.join(input_dict["folder"], input_dict["prechecks_config"]["meta_data_excel_mapping"]))
-        #input_dict["prechecks_config"]["meta_data_excel_mapping"] = repo.get_contents(input_dict["prechecks_config"]["meta_data_excel_mapping"], os.getenv("CONFIG_REPO"))
+        meta_data_excel_mapping = os.path.join(input_dict["folder"], input_dict["prechecks_config"]["meta_data_excel_mapping"])
+        input_dict["prechecks_config"]["meta_data_excel_mapping"] = repo.get_contents(meta_data_excel_mapping, os.getenv("CONFIG_REPO"))
     except:
         return 400, f"Cannot get configuration files !", input_dict
 
