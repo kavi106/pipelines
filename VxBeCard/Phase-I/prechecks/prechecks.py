@@ -17,6 +17,7 @@ from github import Auth, Github
 from time import sleep
 
 def pullConfigFiles(**kwargs):
+    return 200, "Success !!", kwargs
     print(kwargs["folder"])
     try:
         auth = Auth.Token(os.getenv("CONFIG_REPO_TOKEN"))
