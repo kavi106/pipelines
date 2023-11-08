@@ -144,8 +144,6 @@ def validate_meta_data_excel(input_dict):
     """
     checks = input_dict["prechecks_config"]["meta_data_excel_mapping"]
 
-    print(checks)
-
     try:
         excel_files = _get_file_list(
             input_dict,
