@@ -39,10 +39,12 @@ def pullConfigFiles(**kwargs):
     except:
         return (400, f"Cannot get configuration files !", kwargs)
 
-    print(kwargs)
+    #print(kwargs)
     return 200, "All configuration files pulled successfully.", kwargs
 
 def pullFcsFiles(**kwargs):
+    #ursgal_credentials["credentials_lookup"]
+    print(kwargs["exits"][0]["credentials_lookup"])
     sleep(5)
     kwargs["ws"] = "myLabDataValidation"
     kwargs["cc"] = "XYZ"
