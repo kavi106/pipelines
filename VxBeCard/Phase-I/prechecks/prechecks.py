@@ -33,7 +33,7 @@ def pull_config_files(input_dict):
                     file_content.decoded_content.decode()
                 )
         meta_data_excel_mapping = os.path.join(input_dict["folder"], input_dict["prechecks_config"]["meta_data_excel_mapping"])
-        input_dict["prechecks_config"]["meta_data_excel_mapping"] = repo.get_contents(meta_data_excel_mapping, os.getenv("CONFIG_REPO"))
+        input_dict["prechecks_config"]["meta_data_excel_mapping"] = repo.get_contents(meta_data_excel_mapping, os.getenv("CONFIG_REPO")).decoded_content.decode()
     except:
         return 400, f"Cannot get configuration files !", input_dict
 
