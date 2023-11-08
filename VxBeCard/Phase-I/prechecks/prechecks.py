@@ -17,6 +17,7 @@ from github import Auth, Github
 from time import sleep
 
 def pullConfigFiles(**kwargs):
+    print(kwargs["folder"])
     try:
         auth = Auth.Token(os.getenv("CONFIG_REPO_TOKEN"))
         g = Github(auth=auth)
@@ -45,7 +46,7 @@ def pullFcsFiles(**kwargs):
     sleep(5)
     kwargs["ws"] = "myLabDataValidation"
     kwargs["cc"] = "XYZ"
-    print(kwargs["base_input_json"])
+    #print(kwargs["base_input_json"])
     return 400, "0 fsc files found !", kwargs
 
 def validateExcelMetadataFile(**kwargs):
