@@ -121,6 +121,7 @@ def _get_file_list(input_dict, file_pattern, uftype):
 
 
 def validate_meta_data_excel(input_dict):
+    return 400, "Error getting Excel Metadata file !", input_dict
     """Validate Meta Data Excel entries agains input_dict based on a validation_json.
 
     Args:
@@ -186,6 +187,7 @@ def validate_meta_data_excel(input_dict):
 
 
 def validate_plate_csv(input_dict):
+    return 400, "Error getting CSV file !", input_dict
     """Validate plate CSV for correct experiment_number and experiment_name entries.
 
     Function uses process.json prechecks.plate_data_input_file_pattern to get a list of
