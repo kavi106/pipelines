@@ -68,6 +68,7 @@ def pull_config_files(input_dict):
 
 
 def pull_fcs_files(input_dict):
+    return 400, "0 fsc files found !", input_dict
     """_summary_
 
     Args:
