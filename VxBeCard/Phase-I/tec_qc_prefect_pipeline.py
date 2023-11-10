@@ -57,10 +57,10 @@ def run_pipeline(wid, input_json):
         uri=input_json["files"]["fcs"][0]
     ).as_storage_base_uri()
     with tags(f"parallelism_{wid}"):
-        qced_fcs_files = run_unode.with_options(name="CytoCluster QC 1.2.3").map(
+        qced_fcs_files = run_unode.with_options(name="CytoCluster QC 1.2.5").map(
             input_json["files"]["fcs"],
             unmapped(urd),
-            unmapped("cytocluster_qc_1_2_3"),
+            unmapped("cytocluster_qc_1_2_5"),
             unmapped(creds),
             unmapped(config),
         )
@@ -109,10 +109,10 @@ def run_pipeline(wid, input_json):
                 unmapped(f"_{engine_name}.fcs"),
                 unmapped(original_storage_base),
             )
-    filter_all = run_unode.with_options(name="CytoCluster QC Summary 1.2.3").map(
+    filter_all = run_unode.with_options(name="CytoCluster QC Summary 1.2.5").map(
         [qced_fcs_files],
         unmapped(urd),
-        unmapped("cytocluster_qc_summary_1_2_3"),
+        unmapped("cytocluster_qc_summary_1_2_5"),
         unmapped(creds),
         unmapped(config),
     )

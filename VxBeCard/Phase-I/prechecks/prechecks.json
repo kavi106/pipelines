@@ -8,7 +8,11 @@
         "function": "pull_fcs_files"
     },
     {
-        "description": "Validating excel metadata and csv plate files.",
+        "description": "Validating excel metadata.",
         "function": "validate_meta_data_excel"
+    },
+    {
+        "description": "Validating Plate Meta data.",
+        "function": "validate_plate_csv"
     }
 ]

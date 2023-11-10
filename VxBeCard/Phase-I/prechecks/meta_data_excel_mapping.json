@@ -1,15 +1,36 @@
 [
     {
-        "input_json_field": "task_id",
-        "sheet": "Metadata Input",
+        "input_json_field": "myLabDataTaskId",
+        "sheet": "Metadata_Input",
         "row": 5,
         "column": 5,
         "NOTE": "Column and row needs to be integers!"
     },
     {
-        "input_json_field": "eln number",
-        "sheet": "Metadata Input",
+        "input_json_field": "instrumentSapId",
+        "sheet": "Metadata_Input",
+        "row": 7,
+        "column": 5,
+        "NOTE": "Column and row needs to be integers!"
+    },
+    {
+        "input_json_field": "experimentNumber",
+        "sheet": "Metadata_Input",
         "row": 17,
+        "column": 5,
+        "NOTE": "Column and row needs to be integers!"
+    },
+    {
+        "input_json_field": "studyNumber",
+        "sheet": "Metadata_Input",
+        "row": 15,
+        "column": 5,
+        "NOTE": "Column and row needs to be integers!"
+    },
+    {
+        "input_json_field": "projectName",
+        "sheet": "Metadata_Input",
+        "row": 14,
         "column": 5,
         "NOTE": "Column and row needs to be integers!"
     }
