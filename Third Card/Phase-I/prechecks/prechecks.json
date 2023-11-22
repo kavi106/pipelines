@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Pulling additional configuration files.",
+        "function": "pull_config_files"
+    },
+    {
+        "description": "Pulling fcs files from MyLabData.",
+        "function": "pull_fcs_files"
+    },
+    {
+        "description": "Validating excel metadata.",
+        "function": "validate_meta_data_excel"
+    },
+    {
+        "description": "Validating Plate Meta data.",
+        "function": "validate_plate_csv"
+    }
+]
