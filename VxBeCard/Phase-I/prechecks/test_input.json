@@ -1,4 +1,16 @@
 {
+    "button_title": "Data Clean",
+    "button_active": 1,
+    "button_order": 1,
+    "folder": "VxBeCard/Phase-I",
+    "departmentName": "BE Immunology",
+    "dataCleanAlgorithm": "FlowAI (1.30.0)",
+    "requesterMUDID": "ks224533",
+    "myLabDataTaskId": "23-10001020-I0",
+    "instrumentSapId": 354557,
+    "projectName": "AR_Macro",
+    "experimentNumber": "ELN212743",
+    "studyNumber": "S00216",
     "jsonforms": {
         "schema": "jsonforms/schema.json",
         "ui_schema": "jsonforms/uischema.json",
@@ -8,14 +20,14 @@
         "input_file_pattern": "^((?!ursgal|[Cc]ompensat|filter_fcs_|cytocluster_qc_).)*\\.fcs$",
         "mylabdata_api_backend_url": "mylabdata-files.uat.corpnet2.com",
         "meta_data_excel_mapping": "prechecks/meta_data_excel_mapping.json",
-        "meta_data_input_file_pattern": "^(standard_metadata_lab_input_v)([0-9]{8})_(.*)(.xlsx)$",
-        "plate_data_input_file_pattern": "^(standard_metadata_lab_input_Plate)([0-9]+)_v([0-9]{8})_(.*)(.csv)$"
+        "meta_data_input_file_pattern": "^(standard_metadata_lab_input_)[0-9]{8}.xlsx$",
+        "plate_data_input_file_pattern": "^(standard_metadata_lab_input_)[0-9]{8}_Plate.*\\.csv$"
     },
     "exits": [
         {
             "kwargs": {
                 "flow_name": "TecQC Pipeline",
-                "prefect_netloc": "https://flink.dev.a-launch-i.gsk.com/api/deployments/0b945f04-5190-4d24-9a45-3cf2f74d6c5c/create_flow_run"
+                "prefect_netloc": "https://flink.dev.a-launch-i.gsk.com/api/deployments/0b26bad3-bb47-4e4f-b0a8-a21d6719a9e8/create_flow_run"
             },
             "type": "prefect",
             "pipeline": "tec_qc_prefect_pipeline.py",
@@ -24,9 +36,5 @@
                 "ursgal_credentials": "credentials_lookup.json"
             }
         }
-    ],
-    "button_title": "Data Clean",
-    "button_active": 1,
-    "button_order": 1,
-    "folder": "Will be overwritten by FastAPI"
+    ]
 }

@@ -13,7 +13,7 @@
             "type": "local_json"
         }
     ],
-    "button_title": "Extract OMIQ statitics and upload",
+    "button_title": "Extract OMIQ statistics and upload",
     "button_active": 0,
     "button_order": 4
 }

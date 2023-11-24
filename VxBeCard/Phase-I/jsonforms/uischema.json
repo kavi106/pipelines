@@ -61,7 +61,7 @@
         {
           "type": "Control",
           "scope": "#/properties/experimentNumber",
-          "label": "Experimant Number (e.g. ELN70466)",
+          "label": "Experiment Number (e.g. ELN70466)",
           "options": {
             "renderer": "custom-string"
           }

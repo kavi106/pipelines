@@ -13,7 +13,7 @@
             "type": "local_json"
         }
     ],
-    "button_title": "Extract FlowJo statitics and upload",
+    "button_title": "Extract FlowJo statistics and upload",
     "button_active": 1,
     "button_order": 2
 }

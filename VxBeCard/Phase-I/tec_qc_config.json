@@ -5,7 +5,8 @@
     "config": {
         "hash_algorithm": "md5",
         "logging_level": "INFO",
-        "umeta": "sqlite3",
+        "umeta": "postgresql",
+        "umeta-postgresql-url": "postgresql://postgres-0.postgres.postgres.svc.cluster.local:5432",
         "certificates": {
             "mylabdata-files.uat.corpnet2.com": false
         }

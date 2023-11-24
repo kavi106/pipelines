@@ -33,5 +33,13 @@
         "row": 14,
         "column": 5,
         "NOTE": "Column and row needs to be integers!"
+    },
+    {
+        "input_json_field": "experimentName",
+        "sheet": "Metadata_Input",
+        "row": 18,
+        "column": 5,
+        "NOTE": "Column and row needs to be integers!",
+        "validate": false
     }
 ]
