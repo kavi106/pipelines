@@ -80,9 +80,6 @@ def pull_config_files(input_dict):
     auth = Auth.Token(os.getenv("CONFIG_REPO_TOKEN"))
     g = Github(auth=auth)
     repo = g.get_repo(os.getenv("CONFIG_REPO"))
-
-    return (400, "", input_dict)
-
     folder = input_dict["folder"]
     for exit in input_dict["exits"]:
         for file_key, filename in exit["additional_files"].items():
