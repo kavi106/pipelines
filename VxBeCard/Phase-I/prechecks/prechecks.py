@@ -73,7 +73,7 @@ def sanitizing_user_inputs(input_dict):
                 output.append(f"{inputs[field]['name']} has invalid input.")
         elif field in input_dict and input_type == "RecipientArray":
              for email in input_dict[field]:
-                 if re.match(inputs[field]['pattern'], str(email['email'])):
+                 if re.match("^.{0,50}$", str(email['email'])):
                     input_dict[field] = None
                     return (400, f"{input_dict[field]}", input_dict)
 
