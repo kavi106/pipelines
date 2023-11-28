@@ -71,12 +71,14 @@ def sanitizing_user_inputs(input_dict):
             if not re.match(inputs[field]['pattern'], str(input_dict[field])):
                 input_dict[field] = ""
                 output.append(f"{inputs[field]['name']} has invalid input.")
+        elif input_type == "RecipientArray":
+             return (400, f"{input_dict[field]}", input_dict)
 
     if len(output) > 0:
         error_message = ", ".join(output)
         return (400, f"{error_message}", input_dict)
     else:
-        return (200, "All input fields valid.", input_dict)
+        return (200, "All input fields are valid.", input_dict)
 
 def list_mylabdata_file(input_dict):
     _init_ursgal(input_dict)
