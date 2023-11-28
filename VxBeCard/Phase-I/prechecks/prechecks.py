@@ -60,7 +60,7 @@ def sanitizing_user_inputs(input_dict):
         },
         "resultRecipient": {
             "name" : "Result Recipient",
-            "pattern": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+            "pattern": "^[a-zA-Z0-9_.]+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$",
             "type": "RecipientArray"
         }
     }
@@ -73,7 +73,7 @@ def sanitizing_user_inputs(input_dict):
                 output.append(f"{inputs[field]['name']} has invalid input.")
         elif field in input_dict and input_type == "RecipientArray":
              for email in input_dict[field]:
-                 if re.match("^[a-zA-Z0-9_.]+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$", str(email['email'])):
+                 if not re.match(inputs[field]['pattern'], str(email['email'])):
                     input_dict[field] = None
                     return (400, f"{input_dict[field]}", input_dict)
 
