@@ -24,49 +24,59 @@ pd.set_option("display.max_columns", 100)
 def sanitizing_user_inputs(input_dict):
     inputs = {
         "myLabDataTaskId": {
+            "name" : "MyLabData TaskId",
             "pattern": "^[A-Za-z0-9_-]{0,30}$",
             "type": "string"
         },
         "requesterMUDID": {
+            "name" : "Requester MUDID",
             "pattern": "^[A-Za-z0-9]{0,15}$",
             "type": "string"
         },
         "instrumentSapId": {
+            "name" : "Instrument SAP ID",
             "pattern": "^[0-9]{0,20}$",
             "type": "string"
         },
         "dataCleanAlgorithm": {
+            "name" : "Data Clean Algorithm",
             "pattern": "^.{0,20}$",
             "type": "string"
         },
         "projectName": {
+            "name" : "Project Name",
             "pattern": "^.{0,50}$",
-            "type": "string",
-            "maxLength": 50
+            "type": "string"
         },
         "experimentNumber": {
-            "pattern": "^ELN.*$",
-            "type": "string",
-            "maxLength": 30
+            "name" : "Experiment Number",
+            "pattern": "^ELN[0-9a-zA-Z-_]{0,10}$",
+            "type": "string"
         },
         "studyNumber": {
-            "pattern": "^ELN[0-9a-zA-Z-_]{0,10}$",
-            "type": "string",
-            "maxLength": 30
+            "name" : "Study Number",
+            "pattern": "^[0-9a-zA-Z_-]{0,30}$",
+            "type": "string"
         },
         "resultRecipient": {
+            "name" : "Result Recipient",
             "pattern": "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$",
-            "type": "RecipientArray",
-            "maxLength": 20
+            "type": "RecipientArray"
         }
     }
-    output = ""
+    output = []
     for field in inputs:
         input_type = inputs[field]["type"]
         if input_type == "string":
-            output = output + str(field)
+            if not re.match(inputs[field]['pattern'], input_dict[field]):
+                input_dict[field] = ""
+                output.append(f"{inputs[field]['name']} has invalid input.")
 
-    return (400, f"{output}", input_dict)
+    if len(output) > 0:
+        error_message = ", ".join(output)
+        return (400, f"{error_message}", input_dict)
+    else:
+        return (200, "All input fields valid.", input_dict)
 
 def list_mylabdata_file(input_dict):
     _init_ursgal(input_dict)
