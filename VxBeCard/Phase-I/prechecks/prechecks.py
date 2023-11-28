@@ -68,7 +68,7 @@ def sanitizing_user_inputs(input_dict):
     for field in inputs:
         input_type = inputs[field]["type"]
         if input_type == "string":
-            return (400, f"{inputs[field]['pattern']}", input_dict[field])
+            return (400, f"aa", "bb")
             if not re.match(inputs[field]['pattern'], input_dict[field]):
                 input_dict[field] = ""
                 output.append(f"{inputs[field]['name']} has invalid input.")
