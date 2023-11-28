@@ -24,27 +24,23 @@ pd.set_option("display.max_columns", 100)
 def sanitizing_user_inputs(input_dict):
     inputs = {
         "myLabDataTaskId": {
-            "pattern": "string",
-            "type": "string",
-            "maxLength": 30
+            "pattern": "^[A-Za-z0-9_-]{0,30}$",
+            "type": "string"
         },
         "requesterMUDID": {
-            "pattern": "string",
-            "type": "string",
-            "maxLength": 15
+            "pattern": "^[A-Za-z0-9]{0,15}$",
+            "type": "string"
         },
         "instrumentSapId": {
-            "pattern": "number",
-            "type": "string",
-            "maxLength": 20
+            "pattern": "^[0-9]{0,20}$",
+            "type": "string"
         },
         "dataCleanAlgorithm": {
-            "pattern": "string",
-            "type": "string",
-            "maxLength": 20
+            "pattern": "^.{0,20}$",
+            "type": "string"
         },
         "projectName": {
-            "pattern": "string",
+            "pattern": "^.{0,50}$",
             "type": "string",
             "maxLength": 50
         },
@@ -54,20 +50,20 @@ def sanitizing_user_inputs(input_dict):
             "maxLength": 30
         },
         "studyNumber": {
-            "pattern": "^ELN.*$",
+            "pattern": "^ELN[0-9a-zA-Z-_]{0,10}$",
             "type": "string",
             "maxLength": 30
         },
         "resultRecipient": {
-            "pattern": "^ELN.*$",
+            "pattern": "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$",
             "type": "array",
             "maxLength": 20
         }
     }
     output = ""
     for field in inputs:
-        #output = output + field
-        input_dict[field] = ""
+        output = output + field
+        #input_dict[field] = ""
 
     return (400, f"{output}", input_dict)
 
