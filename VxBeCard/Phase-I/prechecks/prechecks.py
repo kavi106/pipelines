@@ -64,10 +64,12 @@ def sanitizing_user_inputs(input_dict):
             "maxLength": 20
         }
     }
-    for field, field_val in inputs:
+    output = ""
+    for field in inputs:
+        output = output + field
         input_dict[field] = ""
 
-    return (400, f"Cannot connect to ", input_dict)
+    return (400, f"{output}", input_dict)
 
 def list_mylabdata_file(input_dict):
     _init_ursgal(input_dict)
