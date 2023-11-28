@@ -1,5 +1,9 @@
 [
     {
+        "description": "Validating user inputs.",
+        "function": "sanitizing_user_inputs"
+    },
+    {
         "description": "Pulling additional configuration files.",
         "function": "pull_config_files"
     },

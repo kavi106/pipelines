@@ -21,6 +21,53 @@ from collections import Counter
 
 pd.set_option("display.max_columns", 100)
 
+def sanitizing_user_inputs(input_dict):
+    inputs = {
+        "myLabDataTaskId": {
+            "pattern": "string",
+            "type": "string",
+            "maxLength": 30
+        },
+        "requesterMUDID": {
+            "pattern": "string",
+            "type": "string",
+            "maxLength": 15
+        },
+        "instrumentSapId": {
+            "pattern": "number",
+            "type": "string",
+            "maxLength": 20
+        },
+        "dataCleanAlgorithm": {
+            "pattern": "string",
+            "type": "string",
+            "maxLength": 20
+        },
+        "projectName": {
+            "pattern": "string",
+            "type": "string",
+            "maxLength": 50
+        },
+        "experimentNumber": {
+            "pattern": "^ELN.*$",
+            "type": "string",
+            "maxLength": 30
+        },
+        "studyNumber": {
+            "pattern": "^ELN.*$",
+            "type": "string",
+            "maxLength": 30
+        },
+        "resultRecipient": {
+            "pattern": "^ELN.*$",
+            "type": "array",
+            "maxLength": 20
+        }
+    }
+    for field, field_val in inputs:
+        input_dict[field] = ""
+
+    return (400, f"Cannot connect to ", input_dict)
 
 def list_mylabdata_file(input_dict):
     _init_ursgal(input_dict)
@@ -80,6 +127,7 @@ def pull_config_files(input_dict):
     auth = Auth.Token(os.getenv("CONFIG_REPO_TOKEN"))
     g = Github(auth=auth)
     repo = g.get_repo(os.getenv("CONFIG_REPO"))
+
     folder = input_dict["folder"]
     for exit in input_dict["exits"]:
         for file_key, filename in exit["additional_files"].items():
@@ -217,7 +265,13 @@ def validate_meta_data_excel(input_dict):
 
     num_excel_files = len(excel_files)
     if num_excel_files == 0:
-        return 400, "0 excel metadata file found !", input_dict
+        return (
+            400, 
+            "0 excel metadata file found !"
+            " Please make sure that the excel filename is"
+            " 'standard_metadata_lab_input_v1.0.0.xlsx'", 
+            input_dict
+        )
 
     if num_excel_files != 1:
         e_file_names = ', '.join([(ursgal.UFile(file)).object_name for file in excel_files])
@@ -242,7 +296,7 @@ def validate_meta_data_excel(input_dict):
         check_requires_validation = check.get("validate", True)
 
         if (
-            check["meta_data_excel_value"] == check["input_value"]
+            str(check["meta_data_excel_value"]).strip() == str(check["input_value"]).strip()
             or check_requires_validation is False
         ):
             input_dict["validated_meta_data"][json_field] = check[
@@ -289,25 +343,12 @@ def validate_plate_csv(input_dict):
     if len(plate_csvs) == 0:
         return (
             400,
-            "0 plate CSV(s) found in MyLabData for the input TaskId",
+            "0 plate CSV file found in MyLabData for the input TaskId"
+            " Please make sure that the csv filename follows the naming convention:"
+            " 'standard_metadata_lab_input_PlateX_v1.0.0.csv' where X is an integer", 
             input_dict,
         )
     
-    # check if we have only 1 csv file for each plate
-    plate_csvs_dict = {}
-    for index, element in enumerate(plate_csvs):
-        plate_csvs_dict[element] = element.split('_')[4]
-    counts = Counter(plate_csvs_dict.values())
-    # Create a new dictionary with only the keys whose value has a count greater than 1
-    duplicates = {k: v for k, v in plate_csvs_dict.items() if counts[v] > 1}
-    if len(duplicates.keys()) > 0:
-        duplicate_files = ", ".join(list(duplicates.keys()))
-        return (
-            400,
-            f"More than 1 csv files found per plate: {duplicate_files}",
-            input_dict,
-        )
-
     panel_names = []
     logging.debug(f"will check agains {input_dict['validated_meta_data']}")
     for p_csv in plate_csvs:
