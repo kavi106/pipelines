@@ -56,14 +56,15 @@ def sanitizing_user_inputs(input_dict):
         },
         "resultRecipient": {
             "pattern": "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$",
-            "type": "array",
+            "type": "RecipientArray",
             "maxLength": 20
         }
     }
     output = ""
     for field in inputs:
-        output = output + field
-        #input_dict[field] = ""
+        input_type = inputs[field]["type"]
+        if input_type == "string":
+            output = output + str(field)
 
     return (400, f"{output}", input_dict)
 
