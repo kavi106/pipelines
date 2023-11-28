@@ -66,7 +66,7 @@ def sanitizing_user_inputs(input_dict):
     }
     output = ""
     for field in inputs:
-        output = output + field
+        #output = output + field
         input_dict[field] = ""
 
     return (400, f"{output}", input_dict)
