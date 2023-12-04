@@ -22,19 +22,19 @@ pd.set_option("display.max_columns", 100)
 
 
 def sanitizing_user_inputs(input_dict):
-    auth = Auth.Token(os.getenv("CONFIG_REPO_TOKEN"))
+    auth = Auth.Token(os.getenv("LAUNCHI_CONFIG_REPO_TOKEN"))
     g = Github(auth=auth)
-    repo = g.get_repo(os.getenv("CONFIG_REPO"))
+    repo = g.get_repo(os.getenv("LAUNCHI_CONFIG_REPO"))
 
     try:
         folder = input_dict["folder"]
         file_content = repo.get_contents(
-            f"{folder}/jsonforms/schema.json", os.getenv("CONFIG_REPO_BRANCH")
+            f"{folder}/jsonforms/schema.json", os.getenv("LAUNCHI_CONFIG_REPO_BRANCH")
         )
     except github.GithubException:
         return (
             400,
-            f"Cannot get configuration files jsonforms/precheck_rules.json from branch {os.getenv('CONFIG_REPO_BRANCH')}!",
+            f"Cannot get configuration files jsonforms/precheck_rules.json from branch {os.getenv('LAUNCHI_CONFIG_REPO_BRANCH')}!",
             input_dict
         )
     schema = json.loads(file_content.decoded_content.decode())
