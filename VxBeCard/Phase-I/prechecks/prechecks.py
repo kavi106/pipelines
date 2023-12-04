@@ -22,7 +22,6 @@ pd.set_option("display.max_columns", 100)
 
 
 def sanitizing_user_inputs(input_dict):
-    return (200, "Hello", input_dict)
     auth = Auth.Token(os.getenv("LAUNCHI_CONFIG_REPO_TOKEN"))
     g = Github(auth=auth)
     repo = g.get_repo(os.getenv("LAUNCHI_CONFIG_REPO"))
