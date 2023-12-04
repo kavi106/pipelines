@@ -27,8 +27,9 @@ def sanitizing_user_inputs(input_dict):
     repo = g.get_repo(os.getenv("CONFIG_REPO"))
 
     try:
+        folder = input_dict["folder"]
         file_content = repo.get_contents(
-            "jsonforms/precheck_rules.json", os.getenv("CONFIG_REPO_BRANCH")
+            f"{folder}/jsonforms/precheck_rules.json", os.getenv("CONFIG_REPO_BRANCH")
         )
     except github.GithubException:
         return update_validation(
