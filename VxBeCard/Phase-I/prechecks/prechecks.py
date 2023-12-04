@@ -81,9 +81,16 @@ def sanitizing_user_inputs(input_dict):
 
     if len(output) > 0:
         error_message = ", ".join(output)
-        return (400, f"{error_message}", input_dict)
+        return (400, error_message, update_input_dict(input_dict, error_message))
     else:
         return (200, "All input fields are valid.", input_dict)
+
+
+def update_input_dict(input_dict, error_message):
+    input_dict["_validation"] = 400
+    input_dict["_validation_message"].append(error_message)
+    return input_dict
+
 
 def list_mylabdata_file(input_dict):
     _init_ursgal(input_dict)
