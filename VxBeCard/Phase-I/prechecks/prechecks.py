@@ -33,7 +33,7 @@ def sanitizing_user_inputs(input_dict):
     except github.GithubException:
         return update_validation(
             400,
-            "Cannot get configuration files jsonforms/precheck_rules.json from branch {os.getenv('CONFIG_REPO_BRANCH')}!",
+            f"Cannot get configuration files jsonforms/precheck_rules.json from branch {os.getenv('CONFIG_REPO_BRANCH')}!",
             input_dict
         )
     validtion_rules = json.loads(file_content.decoded_content.decode())
