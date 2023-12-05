@@ -6,5 +6,6 @@
     "teams_email": "289aece7.gsk.onmicrosoft.com@amer.teams.ms",
     "telemetry": {
         "server": ""
-    }
+    },
+    "security_groups": ["VxBelgium_FlowCytometry_DataPipeline", "FlowCytometry_Product_Team"]
 }
