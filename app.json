@@ -7,5 +7,5 @@
     "telemetry": {
         "server": ""
     },
-    "security_groups": ["VxBelgium_FlowCytometry_DataPipeline", "FlowCytometry_Product_Teamx"]
+    "security_groups": ["VxBelgium_FlowCytometry_DataPipeline", "FlowCytometry_Product_Teamxxxx"]
 }
