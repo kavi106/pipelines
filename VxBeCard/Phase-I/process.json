@@ -28,5 +28,6 @@
     "button_title": "Data Clean",
     "button_active": 1,
     "button_order": 1,
-    "folder": "Will be overwritten by FastAPI"
+    "folder": "Will be overwritten by FastAPI",
+    "security_groups": ["VxBelgium_FlowCytometry_DataPipeline"]
 }

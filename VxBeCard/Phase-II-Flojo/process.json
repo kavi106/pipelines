@@ -15,5 +15,7 @@
     ],
     "button_title": "Extract FlowJo statistics and upload",
     "button_active": 1,
-    "button_order": 2
+    "button_order": 2,
+    "folder": "Will be overwritten by FastAPI",
+    "security_groups": ["FlowCytometry_Product_Team"]
 }
