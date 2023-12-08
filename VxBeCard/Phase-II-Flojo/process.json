@@ -18,5 +18,5 @@
     "button_order": 2,
     "folder": "Will be overwritten by FastAPI",
     "security_groups": ["FlowCytometry_Product_Team"],
-    "access_denied_message": "You do not have access to this pipeline !"
+    "access_denied_message": "You do not have access to this pipeline ! yyy"
 }
