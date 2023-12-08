@@ -7,5 +7,6 @@
     "telemetry": {
         "server": ""
     },
-    "security_groups": ["VxBelgium_FlowCytometry_DataPipeline", "FlowCytometry_Product_Team"]
+    "security_groups": ["VxBelgium_FlowCytometry_DataPipeline", "FlowCytometry_Product_Team"],
+    "access_denied_message": "You do not have access to this page !"
 }
