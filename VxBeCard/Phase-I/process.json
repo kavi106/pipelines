@@ -29,6 +29,6 @@
     "button_active": 1,
     "button_order": 1,
     "folder": "Will be overwritten by FastAPI",
-    "security_groups": ["VxBelgium_FlowCytometry_DataPipeline"],
+    "security_groups": ["FlowCytometry_Product_Team"],
     "access_denied_message": "You do not have access to this pipeline ! <b>yyy</b> sss"
 }
