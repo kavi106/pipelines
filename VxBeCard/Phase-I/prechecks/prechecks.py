@@ -425,10 +425,9 @@ def validate_panel_name(input_dict):
 
 
 def start_prefect_pipeline(input_dict):
+    return 400, "xxx", input_dict
     wid = ursgal.UWIDGenerator().generate_wid()
     input_dict["wid"] = wid
-
-    return 400, "xxx", input_dict
     
     if "_validation" in input_dict and input_dict["_validation"] != 200:
         return 400, "Please fix the errors and submit again !", input_dict
