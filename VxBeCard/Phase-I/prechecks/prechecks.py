@@ -425,7 +425,6 @@ def validate_panel_name(input_dict):
 
 
 def start_prefect_pipeline(input_dict):
-    return 400, "xxx", input_dict
     wid = ursgal.UWIDGenerator().generate_wid()
     input_dict["wid"] = wid
     
