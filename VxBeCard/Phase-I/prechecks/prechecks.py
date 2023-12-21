@@ -460,6 +460,7 @@ def start_prefect_pipeline(input_dict):
 
 
 def send_notification(input_dict):
+    print('Sendoing Notification !!!')
     try:
         recipients = (
             [i["email"] for i in input_dict["resultRecipient"]]
