@@ -7,7 +7,7 @@
     "telemetry": {
         "server": ""
     },
-    "engineers_groups": ["FlowCytometry_Product_Teamx"],
+    "engineers_groups": ["FlowCytometry_Product_Team"],
     "maintenance_mode": "1",
     "maintenance_mode_message": "We'll be back shortly. Sorry for the inconvenience !",
     "access_denied_message": "You do not have access to this page !"
