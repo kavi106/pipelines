@@ -7,6 +7,6 @@
     "telemetry": {
         "server": ""
     },
-    "security_groups": ["FlowCytometry_Product_Team"],
+    "engineers_groups": ["FlowCytometry_Product_Team"],
     "access_denied_message": "Work in progress !"
 }
