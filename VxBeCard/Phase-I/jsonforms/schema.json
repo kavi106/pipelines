@@ -7,6 +7,12 @@
       "pattern": "^[A-Za-z0-9_-]{0,30}$",
       "maxLength": 30
     },
+    "superSharePath": {
+      "type": "string",
+      "name": "SuperShare Experiment Run Folder Path",
+      "pattern": "^[A-Za-z0-9_-]{0,30}$",
+      "maxLength": 30
+    },
     "requesterMUDID": {
       "type": "string",
       "name": "Requester MUDID",

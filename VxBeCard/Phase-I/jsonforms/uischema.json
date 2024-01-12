@@ -10,8 +10,8 @@
       "elements": [
         {
           "type": "Control",
-          "scope": "#/properties/myLabDataTaskId",
-          "label": "MyLabData TaskId",
+          "scope": "#/properties/superSharePath",
+          "label": "SuperShare Experiment Run Folder Path",
           "options": {
             "renderer": "custom-string"
           }
