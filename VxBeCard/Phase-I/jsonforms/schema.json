@@ -56,7 +56,7 @@
     }
   },
   "required": [
-    "myLabDataTaskId",
+    "superSharePath",
     "requesterMUDID",
     "instrumentSapId",
     "dataCleanAlgorithm",

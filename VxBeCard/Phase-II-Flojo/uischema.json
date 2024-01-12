@@ -3,15 +3,15 @@
     "elements": [
       {
         "type": "Label",
-        "text": "Extract FlowJo statitics and upload"
+        "text": "Extract FlowJo statistics and upload"
       },
       {
         "type": "HorizontalLayout",
         "elements": [
           {
             "type": "Control",
-            "scope": "#/properties/myLabDataTaskId",
-            "label": "MyLabData TaskId",
+            "scope": "#/properties/superSharePath",
+            "label": "SuperShare Experiment Run Folder Path",
             "options": {
               "renderer": "custom-string"
             }
@@ -82,7 +82,7 @@
           {
             "type": "Control",
             "scope": "#/properties/flowjowspfile",
-            "label": "FlowJo .wsp file in MyLabData",
+            "label": "FlowJo .wsp filename",
             "options": {
               "renderer": "custom-string"
             }

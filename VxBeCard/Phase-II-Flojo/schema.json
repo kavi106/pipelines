@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "myLabDataTaskId": {
+    "superSharePath": {
       "type": "string",
       "maxLength": 200
     },
@@ -35,7 +35,7 @@
     }
   },
   "required": [
-    "myLabDataTaskId",
+    "superSharePath",
     "requesterMUDID",
     "instrumentSapId",
     "projectName",
